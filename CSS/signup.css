@@ -1,0 +1,127 @@
+#main{
+ border-width: 1360px;
+ 
+height: 300px;;
+ border-color: solid black;
+
+}
+#main>.imageside{
+    border: brown solid;
+    width: 30%;
+    height: 900px;
+    float: left;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+#main>.imageside>div:nth-child(1){
+    border: rgb(83, 81, 81) solid ;
+    background-color: rgb(236, 229, 229);
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 90px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#main>.imageside>div:nth-child(2){
+    border: rgb(83, 81, 81) solid  ;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 90px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#main>.imageside>div:nth-child(3){
+    border: rgb(83, 81, 81) solid  ;
+    border-radius: 10px;
+    background-color: cornsilk;
+    margin-left: 80px;
+    margin-right: 90px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#main>.formside{
+border: black solid;
+width: 50%;
+float: left;
+height: 700px;
+margin-top: 150px;
+margin-left: 50px;
+}
+
+.form{
+    padding:40px;
+}
+.form-value{
+    margin-bottom: 30px;
+    /* position: relative; */
+}
+.form-value  label{
+
+    padding-left: 20px;
+    
+    
+
+}
+.form-value input {
+    padding-left: 50px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.form-value:nth-child(2)>input:nth-child(1) {
+    padding-left: 50px;
+    height: 25px;
+    width: 100px;
+}
+.form-value1 label{
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.form-value1 select{
+    margin-left: 10px;
+    width: 100px;
+    margin-bottom: 30px;
+    height: 25px;
+}
+.form-value2 label{
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.form-value2 select{
+    margin-left: 22px;
+    width: 100px;
+    margin-bottom: 30px;
+    height: 25px;
+}
+.form-value3 label{
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.form-value3 select{
+    margin-left: 40px;
+    width: 100px;
+    margin-bottom: 30px;
+    height: 25px;
+}
+.form-value4 label{
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.form-value4 input{
+    margin-left: 10px;
+    width: 15px;
+    margin-bottom: 30px;
+    height: 25px;
+}
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 30px;
+    color: rgb(236, 229, 229);
+    background-color:#f53838;
+    border-radius: 10px;
+
+}
