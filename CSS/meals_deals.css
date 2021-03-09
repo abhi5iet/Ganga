@@ -1,0 +1,37 @@
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 4%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-left: 40%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+#mainbody{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.inline{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+}
+#top{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.lighter{
+    color: lightgray;
+}
