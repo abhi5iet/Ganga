@@ -100,5 +100,14 @@ input{
 #posts>div{
     width: 35%;
     border: 1px solid black;
-    height: 100px;
+    height: 450px;
+    border-radius: 9px ;
 }
+
+#imgs{
+    background-size: 100% 300px;
+    width: 100%;
+    height: 300px;
+    border-radius: 9px ;
+}
+
