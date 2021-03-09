@@ -100,7 +100,7 @@ input{
 #posts>div{
     width: 35%;
     border: 1px solid black;
-    height: 450px;
+    height: 500px;
     border-radius: 9px ;
 }
 
@@ -109,5 +109,67 @@ input{
     width: 100%;
     height: 300px;
     border-radius: 9px ;
+    background-attachment: local;
+    position: relative;
 }
 
+#imgs>h2{
+    position: absolute;
+    z-index: 10;
+    margin-top: 0%;
+    top: 260px;
+    color: white;
+    right: auto;
+    text-align: center;
+    width: 100%;
+}
+h2 span { 
+    display: block;
+    background: rgb(0, 0, 0);
+    background: rgba(19, 19, 19, 0.7);
+    padding: 5px; 
+    width: 98.3%;
+ }
+ .padded{
+     padding: 2%;
+ }
+ .stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    font-size: 25px;
+  }
+   
+  .stars-outer::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+    color: lightgray;
+  }
+   
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+   
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #f8ce0b;
+  }
+
+  .post-buttons{
+      width: 40%;
+      padding: 2%;
+      background:red;
+      color: white;
+      font-weight: bold;
+      font-size: 19px;
+      border: 0px;
+      border-radius: 5px;
+      margin-right:26%;
+  }
+  .post-buttons:hover{
+        opacity: 0.7;
+  }
