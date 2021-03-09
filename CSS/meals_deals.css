@@ -16,8 +16,11 @@
   .fa:hover {
     opacity: 0.7;
 }
-#mainbody{
-    width: 90%;
+#topbody{
+    background: rgba(240,240,240,255);
+}
+#mainbody,#top{
+    width: 80%;
     margin: auto;
     border: 1px solid black;
     padding: 2%;
@@ -28,10 +31,74 @@
     font-family: 'Roboto', sans-serif;
 }
 #top{
-    white-space: nowrap;
+    white-space: normal;
     overflow-x: auto;
     overflow-y: hidden;
+    
 }
 .lighter{
-    color: lightgray;
+    color: rgb(167, 167, 167);
+}
+
+#top>form>input,select,button{
+    width: 15%;
+    margin: 1%;
+    padding: 0.6%;
+    color: rgb(136, 136, 136);
+    font-size: 17px;
+    
+}
+input{
+    width: 22%;
+}
+#top>form>button{
+    width: 16%;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0.9%;
+}
+#search{
+    background-color: red;
+}
+#browse{
+    background-color: green;
+}
+#imgbox{
+    box-shadow: 3px 3px lightgray;
+}
+#imgbox>img{
+    width: 100%;
+}
+
+#buttons>button{
+    width: 2%;
+    padding: 0.2%;
+    margin: 1%;
+    border: 0px;
+}
+.flexbox{
+    display: flex;
+    gap: 2%;
+    
+    flex-wrap: wrap;
+}
+
+.flex{
+    flex-direction: row;
+    margin: 2% 0px;
+    flex-grow: 2;
+   
+}
+
+#posts{
+    width: 100%;
+}
+
+#posts>div{
+    width: 35%;
+    border: 1px solid black;
+    height: 100px;
 }
