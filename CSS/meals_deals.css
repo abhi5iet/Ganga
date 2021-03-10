@@ -16,7 +16,7 @@
   .fa:hover {
     opacity: 0.7;
 }
-#topbody{
+#topbody,#bottombody{
     background: rgba(240,240,240,255);
 }
 #mainbody,#top{

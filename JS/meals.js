@@ -60,9 +60,9 @@ function createButton(){
         let button = document.createElement('button');
         button.setAttribute('id',i+1);
         button.innerHTML = i+1;
-        buttons1.appendChild(button);
-        buttons2.appendChild(button);
-      
+        let cloneBut = button.cloneNode(true);
+        buttons1.append(button);
+        buttons2.appendChild(cloneBut)
     }
 
 }
