@@ -83,7 +83,7 @@
 }
 .flexbox{
     display: flex;
-    gap: 2%;
+    gap: 5%;
     
     flex-wrap: wrap;
 }
@@ -91,7 +91,7 @@
 .flex{
     flex-direction: row;
     margin: 2% 0px;
-    flex-grow: 2;
+   /* flex-grow: 1;*/
    
 }
 
@@ -100,7 +100,7 @@
 }
 
 #posts>div{
-    width: 35%;
+    width: 46%;
     border: 1px solid black;
     height: 530px;
     border-radius: 9px ;
