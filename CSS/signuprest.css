@@ -1,0 +1,192 @@
+#main{
+    border-width: 1360px;
+    
+   height: 300px;;
+    border-color: solid black;
+   
+   }
+   #main>.imageside{
+       border: brown solid;
+       width: 30%;
+       height: 900px;
+       float: left;
+       margin-top: 150px;
+       margin-left: 50px;
+   }
+   #main>.imageside>div:nth-child(1){
+       border: rgb(83, 81, 81) solid ;
+       background-color: #e0e0e0;
+       border-radius: 10px;
+       margin-left: 80px;
+       margin-right: 90px;
+       margin-top: 5px;
+       padding-left: 10px;
+       padding-top: 10px;
+   }
+   #main>.imageside>div:nth-child(2){
+       border: rgb(83, 81, 81) solid  ;
+       border-radius: 10px;
+       margin-left: 80px;
+       margin-right: 90px;
+       margin-top: 15px;
+       padding-left: 10px;
+       padding-top: 10px;
+   }
+   #main>.imageside>div:nth-child(3){
+       border: rgb(83, 81, 81) solid  ;
+       border-radius: 10px;
+       background-color:white;
+       margin-left: 80px;
+       margin-right: 90px;
+       margin-top: 15px;
+       text-align: justify;
+       padding-left: 10px;
+       padding-top: 10px;
+   }
+   #main>.formside{
+   border: black solid;
+   width: 50%;
+   float: left;
+   height: 1150px;
+   margin-top: 150px;
+   margin-left: 50px;
+   }
+   
+   .form{
+       padding:40px;
+   }
+   .form-value{
+       margin-bottom: 15px;
+       /* position: relative; */
+   }
+   .form-value  label{
+   
+       padding-left: 20px;
+       
+       
+   
+   }
+   .form-value input {
+       /* padding-left: 50px; */
+       height: 25px;
+       margin-left: 10px;
+   }
+   
+   .form-value:nth-child(2)>input:nth-child(1) {
+       padding-left: 50px;
+       height: 25px;
+       width: 100px;
+   }
+   .form-value1 label{
+       padding-left: 20px;
+       margin-bottom: 30px;
+   }
+   .form-value1 select{
+       margin-left: 10px;
+       width: 100px;
+       margin-bottom: 30px;
+       height: 25px;
+   }
+   .form-value2 label{
+       padding-left: 20px;
+       margin-bottom: 30px;
+   }
+   .form-value2 select{
+       margin-left: 22px;
+       width: 100px;
+       margin-bottom: 30px;
+       height: 25px;
+   }
+   .form-value3 label{
+       padding-left: 20px;
+       margin-bottom: 30px;
+   }
+   .form-value3 select{
+       margin-left: 40px;
+       width: 100px;
+       margin-bottom: 15px;
+       height: 25px;
+   }
+   .form-value4 label{
+       padding-left: 20px;
+       margin-bottom: 30px;
+   }
+   .form-value4 input{
+       margin-left: 20px;
+       width: 15px;
+       margin-bottom: 15px;
+       height: 25px;
+   }
+   .form-value5 label{
+       padding-left: 20px;
+       margin-bottom: 15px;
+   }
+   .form-value5 input{
+       margin-left: 20px;
+       width: 150px;
+       margin-bottom: 15px;
+       height: 25px;
+   }
+   .form-value6 label{
+       padding-left: 20px;
+       margin-bottom: 15px;
+   }
+   .form-value6 input{
+       margin-left: 20px;
+       width: 40px;
+       margin-bottom: 15px;
+       height: 15px;
+   }
+   .form>input{
+       width: 500px;
+       margin-left: 20px;
+       height: 45px;
+       margin-top: 15px;
+       font-size: 30px;
+       color: rgb(236, 229, 229);
+       background-color:#f53838;
+       border-radius: 10px;
+   
+   }
+   
+   /* .clear{
+       clear: both;
+   } */
+   
+   #first-grid{
+     background-color:#e0e0e0;
+     border: 100%;
+   
+     height: 225px;
+     width: 100%;
+   }
+   #first-grid>div{
+       border: #e0e0e0 solid;
+       border-width: 60%;
+       height: 220px;
+   }
+   #first-grid>div>img{
+       width: 70%;
+       margin-left: 200px;
+   }
+   .clear{
+       clear:both
+   }
+   #final-grid{
+       display: grid;
+       grid-gap:20px;
+       background-color:#2bb673;
+       grid-template-columns: 250px 250px 250px 250px;
+       grid-template-rows: 350px 50px 200px 200px;
+       padding: 20px;
+       justify-content: center;
+       height: 400px;
+     
+   }
+   
+   #final-grid div{
+       border:#2bb673 solid;
+       margin-top: 5px;
+       color: white;
+       
+   }
