@@ -46,10 +46,12 @@
     padding: 0.6%;
     color: rgb(136, 136, 136);
     font-size: 17px;
-    
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
 }
-input{
+#top>form>input{
     width: 22%;
+  
 }
 #top>form>button{
     width: 16%;
@@ -61,10 +63,10 @@ input{
     padding: 0.9%;
 }
 #search{
-    background-color: red;
+    background-color: rgba(245,56,56,255);
 }
 #browse{
-    background-color: green;
+    background-color: rgba(4,190,90,255);
 }
 #imgbox{
     box-shadow: 3px 3px lightgray;
@@ -100,7 +102,7 @@ input{
 #posts>div{
     width: 35%;
     border: 1px solid black;
-    height: 500px;
+    height: 530px;
     border-radius: 9px ;
 }
 
@@ -123,7 +125,7 @@ input{
     text-align: center;
     width: 100%;
 }
-h2 span { 
+.flex h2 span { 
     display: block;
     background: rgb(0, 0, 0);
     background: rgba(19, 19, 19, 0.7);
@@ -160,16 +162,103 @@ h2 span {
   }
 
   .post-buttons{
-      width: 40%;
-      padding: 2%;
-      background:red;
+      width: 37%;
+      padding: 1.9%;
+      background:rgba(245,56,56,255);
       color: white;
       font-weight: bold;
       font-size: 19px;
       border: 0px;
-      border-radius: 5px;
-      margin-right:26%;
+      border-radius: 7px;
+      margin-right:29%;
   }
   .post-buttons:hover{
         opacity: 0.7;
+  }
+  .scale{
+      width: 100%;
+  }
+  .selected{
+      width: 30%;
+      height: 25px;
+  }
+ .icons{
+      display:inline-block;
+      margin: 1%;
+      border-radius: 5px;
+ }
+ .bordertop{
+     border-top: 1px solid lightgrey;
+ }
+ .borderright{
+     border-right: 1px solid lightgrey;
+ }
+
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent #555 transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    }
+   .circle {
+      height:45px;
+    width:65px;
+    padding-top: 18px;
+    border-radius:50%;
+    background:rgba(243, 243, 243, 0.767);
   }
