@@ -75,7 +75,7 @@
     width: 100%;
 }
 
-#buttons>button{
+#buttons1>button,#buttons2>button{
     width: 2%;
     padding: 0.2%;
     margin: 1%;
@@ -233,7 +233,7 @@
   }
   
   /* Toggle this class - hide and show the popup */
-  .popup .show {
+  .popup:hover .popuptext{
     visibility: visible;
     -webkit-animation: fadeIn 0.5s;
     animation: fadeIn 0.5s;
