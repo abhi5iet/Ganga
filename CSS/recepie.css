@@ -1,0 +1,261 @@
+:root {
+    --primary: white;
+    --secondary:#f0f0f0;
+    --primary-text: #444444;
+    --secondary-text:#888888;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#main-container{
+    background: var(--secondary);
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+#headlines {
+    margin-left: 150px;
+}
+#h1s,#h2s,#h3s{
+    float: left;
+    margin-top: 20px;
+    font-size: 26px;
+}
+#h1s{
+    color: var(--primary-text);
+    font-weight: 100;
+    font-style: arial;
+}
+#h2s{
+    width: 2px;
+    height: 20px;
+    background: var(--secondary-text);
+    margin-top: 25px;
+    margin-left: 30px;
+}
+#h3s{
+    margin-left: 30px;
+    color: var(--secondary-text);
+}
+#social-link{
+    float: right;
+    margin-right: 180px;
+}
+button {
+    background: royalblue;
+    border: 0;
+    width: 80px;
+    height: 20px;
+    border-radius: 2px;
+    margin-top: 25px;
+}
+#btn1{
+    margin-right: 70px;
+}
+#para1{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+#search-box {
+    margin-left: 150px;
+}
+#categories{
+    width: 150px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    font-family: 'Roboto', Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #666666;
+    padding: 3px 10px 3px 10px;
+    outline: none;
+}
+#search {
+    width: 350px;
+    height: 40px;
+    margin-right: 30px;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    font-family: 'Roboto', Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #666666;
+    padding: 3px 10px 3px 10px;
+}
+#btn3,#btn4 {
+    width: 170px;
+    height: 40px;
+    margin-left: 30px;
+    background: tomato;
+    border: 0px;
+    border-radius: 7px;
+    color: var(--primary);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#btn4 {
+    margin-left: 120px;
+    background: green;
+}
+#cone {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #f0f0f0;
+    margin-left: 49%;
+}
+
+#dishes {
+    width: 75%;
+    height: 150px;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template: "btns1 btns2 btns3 btns4 btns5 btns6"
+    "btns7 btns8 btns9 btns10 btns11 btns12";
+    
+}
+#dishes>button {
+    background: #f5f4f4;
+    width: 140px;
+    height: 35px;
+    margin-left: 20px;
+    border: 1px solid gainsboro;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+
+    
+}
+#buttons {
+    margin-left: 190px;
+}
+#buttons>button, #buttons1>button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: rgb(94, 113, 221);
+    margin-right: 10px;
+}
+#recepies-cat {
+    width: 75%;
+    height: 700px;
+    margin: auto;
+    display: grid;
+    grid-template: "all-cat-rec1 all-cat-rec2 all-cat-rec3"
+    "all-cat-rec4 all-cat-rec5 all-cat-rec6";
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+#recepies-cat>div{
+    border: 1px solid #dddddd;
+}
+#dish-logo,#dish-time{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+}
+#dish-time {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+#img-text {
+    width: 100%;
+    height:215px ;
+    background-image: url(7001.png);
+    background-size: cover;
+    background-position: center;
+    color: rgb(219, 201, 215);
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    text-rendering: auto;
+}
+#time {
+    width: 150px;
+    float: left;
+}
+#time>div:nth-child(1)> img,#like>img,#comment>img {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#time>div:nth-child(1),#time>div:nth-child(2){
+    float: left;
+}
+#time>div:nth-child(2) {
+    margin-left: 10px;
+    padding-top: 18px;
+    font-size: 20px;
+}
+#like,#comment {
+    width: 90px ;
+    height: 50px;
+    float: left;
+}
+#restro-logo>img {
+    width: 60px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 12px;
+}
+#restro-logo{
+    float: left;
+}
+#dish-name{
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 10px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+#btn-view>button{
+    background: tomato;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+    color: white;
+}
+#link-restro {
+    text-decoration: none;
+}
+#advertise {
+    width: 79%;
+    height: 300px;
+    margin-left: 12.5%;
+    margin-top: 100px;
+    border: 2px solid gray;
+}
+#advertise>img{
+    width: 100%;
+    height: 300px;
+    
+}
+#buttons1 {
+    margin-top: 30px;
+    margin-left: 180px;
+}
+#strip{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background: rgb(15, 15, 15);
+    opacity: 0.6
+    
+}
+
+
+
