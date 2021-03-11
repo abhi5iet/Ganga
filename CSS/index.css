@@ -230,6 +230,41 @@ nav > a {
   margin-top: 5px;
 }
 
+#any_restaurant{
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #888888;
+  margin-top: 55px
+}
+
+.btn_red{
+  margin: auto;
+  background-color: #f53838;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 450px;
+  height: 100px;
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_red:hover{
+  background-color: #d41f1f;
+}
+
+#tasty_journey{
+  font-size: 16px;
+  line-height: 10px;
+}
+
 #as_featured_in {
   text-align: center;
   margin-bottom: 40px;
