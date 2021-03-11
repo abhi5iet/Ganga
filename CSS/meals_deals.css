@@ -22,7 +22,6 @@
 #mainbody,#top{
     width: 80%;
     margin: auto;
-    border: 1px solid black;
     padding: 2%;
 }
 
@@ -61,6 +60,10 @@
     font-weight: bold;
     font-size: 15px;
     padding: 0.9%;
+    cursor: pointer;
+}
+#top>form>button:hover{
+    opacity: 0.7;
 }
 #search{
     background-color: rgba(245,56,56,255);
@@ -70,20 +73,38 @@
 }
 #imgbox{
     box-shadow: 3px 3px lightgray;
+    cursor: pointer;
 }
 #imgbox>img{
     width: 100%;
 }
-
+button{
+  outline: none;
+}
+button:hover{
+  opacity: 0.7;
+}
 #buttons1>button,#buttons2>button{
     width: 2%;
     padding: 0.2%;
-    margin: 1%;
+    margin: 0.1%;
+    margin-top: 3%;
     border: 0px;
+    color: rgb(30,129,176);
+    background: white;
+    font-size: 14px;
+}
+#buttons1>#next{
+  margin-left: 85%;
+  border: 1px solid lightgray;
+  width: 5%;
+  height: 20px;
+  background: rgb(238, 238, 238);
+
 }
 .flexbox{
     display: flex;
-    gap: 5%;
+    gap: 6%;
     
     flex-wrap: wrap;
 }
@@ -100,8 +121,7 @@
 }
 
 #posts>div{
-    width: 46%;
-    border: 1px solid black;
+    width: 46.5%;
     height: 530px;
     border-radius: 9px ;
 }
@@ -113,6 +133,7 @@
     border-radius: 9px ;
     background-attachment: local;
     position: relative;
+    cursor: pointer;
 }
 
 #imgs>h2{
@@ -238,7 +259,22 @@
     -webkit-animation: fadeIn 0.5s;
     animation: fadeIn 0.5s;
   }
-  
+
+  .disabled{
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -80px;
+    cursor: default;
+  }
   /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
