@@ -36,7 +36,7 @@
 
         <div class="formside">
             <div class="text">
-                <h2>Food Lover? Sign Up Now or <a>Login With Facebook</a></h2>
+                <h2>Food Lover? Sign Up Now or <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3D31a8b9c90b7c0489f5a355464786ca7a%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Da8ac002c-7f4f-4a04-b21e-864e94829011%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D31a8b9c90b7c0489f5a355464786ca7a%23_%3D_&display=popup&locale=en_GB&pl_dbl=0">Login With Facebook</a></h2>
                 <p>Discover tasty meat-free meals and dine instantly — no coupon payment, booking or printing is
                     required.
 
@@ -49,25 +49,28 @@
             </div>
             <form class="form" id="form">
                 <div class="form-value">
+
+
                     <label>Your Name</label>
 
-                    <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="firstname">
+
+
+                    <input type="text" name="" id="firstname" placeholder="First name">
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="lastname">
+                    <input type="text" name="" id="lastname" placeholder="Last name">
                 </div>
                 <div class="form-value">
                     <label>Email</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="email" name="" id="email" style="width: 400px;">
+                    <input type="email" name="" id="email" placeholder="Email" style="width: 400px;">
                 </div>
                 <div class="form-value">
                     <label>Re-Enter Email</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="email" name="" id="re-email" style="width: 350px;">
+                    <input type="email" name="" id="re-email" placeholder="Re enter email" style="width: 350px;">
                 </div>
                 <div class="form-value">
                     <label>Password</label>
@@ -79,24 +82,24 @@
                     <label>Username</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="username" style="width: 350px;">
+                    <input type="text" name="" id="username" placeholder="uesrname" style="width: 350px;">
                 </div>
                 <div class="form-value1">
                     <label>Birth Date</label>
                     <select id="selectmonth">
                         <option>Month</option>
-                        <option>Jan</option>
-                        <option>Feb</option>
-                        <option>March</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                        <option>July</option>
-                        <option>August</option>
-                        <option>Sep</option>
-                        <option>Oct</option>
-                        <option>Nov</option>
-                        <option>Dec</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
                     </select>
                     <!-- <small>First Name</small> -->
                     <select id="selectday">
@@ -191,10 +194,10 @@
                 <div class="form-value4">
 
                     <div>
-                        <label>Gender</label>
-                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="radio">Gender</label>
+                        <input type="radio" id="gender" name="gender" value="male">
                         <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female">
+                        <input type="radio" id="gender" name="gender" value="female">
                         <label for="female">Female</label>
                     </div>
 
@@ -205,12 +208,13 @@
                 </div>
                 <div class="form-value6">
                     <label for="checkbox"> I agree to KindMeal.my's Terms & Conditions</label>
-                    <input type="checkbox" id="photo" value="checkbox">
+                    <input type="checkbox" id="checkbox" value="checkbox">
                 </div>
-                <input type="submit" value="Join Now" name="">
-            
+                <!-- <input type="submit" value="Join Now" name=""> -->
+
 
             </form>
+            <button onclick="JoinNow()">Join Now</button>
         </div>
 
 
@@ -285,11 +289,11 @@
                 Win an iPad Mini 3
             </p>
         </div>
-     
-        <div id="terms">
+
+        <!-- <div id="terms">
             <p>Copyright © KindMeal.my, 2014 - 2021. All rights reserved.</p>
             <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
-        </div>
+        </div> -->
 
     </div>
     <script src="JS/signup.js"></script>
