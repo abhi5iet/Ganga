@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+  }
+  
+  header {
+    height: 82px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .headicon {
+    height: 100%;
+  }
+  .headicon > img {
+    height: 80%;
+  }
+  
+  #linkicon {
+    margin-left: 130px;
+  }
+  #fbbtn {
+    color: white;
+    font-weight: bold;
+    background-color: #5e5ead;
+    padding: 4px 16px;
+  }
+  #fbbtn:hover {
+    background-color: #4d4d88;
+  }
+  #emailbtn {
+    color: white;
+    font-weight: bold;
+    background-color: #6f6a6a;
+    padding: 4px 26px;
+  }
+  #emailbtn:hover {
+    background-color: gray;
+  }
+  #fbbtn,
+  #emailbtn,
+  #signupbtn,
+  #loginbtn {
+    border: none;
+    border-radius: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  #loginbtn {
+    background-color: white;
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    background-color: #58bf86;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  nav > a > li {
+    font-size: 17.5px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    list-style-type: none;
+  }
+  
+  nav > a {
+    text-decoration: none;
+  }
+  
+  #digireward {
+    color: yellow;
+  }
+  
+  #logodiv {
+    height: 100%;
+    margin-left: 6%;
+  }
+  
+  #logodiv > img {
+    height: 100%;
+    width: auto;
+  }
+  #one {
+    margin-left: 57px;
+
+  }
+  .highlighted_nav{
+    background-color: #49886b;
+    height: 100%;
+    padding: 10px 30px;
+  }
+  #last {
+    margin-right: 70px;
+  }
+  
+/* footer starts from here */
+
+#footpara {
+  margin-top: 10px;
+  background-color: #2bb673;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+#footer > div {
+  width: 17%;
+}
+#footer > div > a,
+#footer > div > p {
+  color: white;
+  text-decoration: none;
+}
+#footer > div > p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#footer > div > a > li {
+  list-style-type: none;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+#footpara > p {
+  color: white;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-size: 12px;
+  font-weight: bold;
+}
