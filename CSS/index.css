@@ -1,0 +1,326 @@
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  height: 82px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.headicon {
+  height: 100%;
+}
+.headicon > img {
+  height: 80%;
+}
+
+#linkicon {
+  margin-left: 130px;
+}
+#fbbtn {
+  color: white;
+  font-weight: bold;
+  background-color: #5e5ead;
+  padding: 4px 16px;
+}
+#fbbtn:hover {
+  background-color: #4d4d88;
+}
+#emailbtn {
+  color: white;
+  font-weight: bold;
+  background-color: #6f6a6a;
+  padding: 4px 26px;
+}
+#emailbtn:hover {
+  background-color: gray;
+}
+#fbbtn,
+#emailbtn,
+#signupbtn,
+#loginbtn {
+  border: none;
+  border-radius: 7px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#loginbtn {
+  background-color: white;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #58bf86;
+  height: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav > a > li {
+  font-size: 17.5px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+nav > a {
+  text-decoration: none;
+}
+
+#digireward {
+  color: yellow;
+}
+
+#logodiv {
+  height: 100%;
+  margin-left: 6%;
+}
+
+#logodiv > img {
+  height: 100%;
+  width: auto;
+}
+#one {
+  margin-left: 57px;
+  background-color: #49886b;
+  height: 100%;
+  padding: 10px 30px;
+}
+#last {
+  margin-right: 70px;
+}
+.mySlides {
+  display: none;
+}
+
+.fade > a > img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.slideshow-container {
+  max-width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+#fudlist {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+#fudlist > img {
+  width: 100%;
+}
+.listhead {
+  width: 86%;
+  margin: auto;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 0px 6px #e0e0e0;
+  margin-top: 40px;
+}
+.listed_items,
+.listpara {
+  display: flex;
+  justify-content: center;
+}
+.listed_items > div {
+  height: 190px;
+  width: 190px;
+  margin: 10px;
+}
+.listed_items > div > a > img {
+  width: 100%;
+}
+.listpara > div {
+  width: 190px;
+  margin: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+.listpara > div > a {
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+  text-decoration: none;
+}
+.listhead > h2 {
+  display: inline-block;
+  margin-left: 10px;
+}
+.listhead > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.save_life {
+  margin-left: 22%;
+}
+.paranum_2 > div > a {
+  font-size: 15px;
+}
+.paranum_2 > div > span {
+  font-size: 12px;
+}
+#pet_finder>img{
+  width: 100%;
+  height: auto;
+}
+#find_deals{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.intro_feature{
+  width: 230px;
+  height: 210px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #cccccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #666666;
+  vertical-align: middle;
+  margin: 10px;
+  font-weight: bolder;
+}
+.intro_feature>a>img{
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.intro_content{
+  font-size: 14px;
+  font-weight: bolder;
+  color: #888888;
+  margin-top: 5px;
+}
+
+#any_restaurant{
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #888888;
+  margin-top: 55px
+}
+
+.btn_red{
+  margin: auto;
+  background-color: #f53838;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 450px;
+  height: 100px;
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_red:hover{
+  background-color: #d41f1f;
+}
+
+#tasty_journey{
+  font-size: 16px;
+  line-height: 10px;
+}
+
+#as_featured_in {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 26px;
+  color: #888888;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#just_save_it {
+  height: 250px;
+  background-color: #ececec;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 0px;
+}
+#just_save_it > img {
+  height: 100%;
+  width: auto;
+}
+
+/* footer starts from here */
+
+#footpara {
+  margin-top: 10px;
+  background-color: #2bb673;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+#footer > div {
+  width: 17%;
+}
+#footer > div > a,
+#footer > div > p {
+  color: white;
+  text-decoration: none;
+}
+#footer > div > p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#footer > div > a > li {
+  list-style-type: none;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+#footpara > p {
+  color: white;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-size: 12px;
+  font-weight: bold;
+}
