@@ -443,22 +443,48 @@ function createButton(){
     for(i=0;i<limit;i++){
         let button = document.createElement('button');
         button.setAttribute('id',i);
+        button.setAttribute('class','inline')
         button.innerHTML = i+1;
-        button.onclick = addPosts;
+        button.onclick = createNums;
         let cloneBut = button.cloneNode(true);
+        cloneBut.onclick = createNums;
         buttons1.append(button);
         buttons2.appendChild(cloneBut)
     }
-
+    let button = document.createElement('button');
+    button.setAttribute('id','next');
+    button.setAttribute('class','inline');
+    button.innerHTML="Next";
+    button.onclick = next;
+    let clone = button.cloneNode(true);
+    clone.onclick= next;
+    buttons1.appendChild(button);
+    buttons2.appendChild(clone)
 
 
 }
-
+function next(){
+    
+}
 createButton()
+function createNums(){
+    let cur = event.target.id;
+    let l = + cur;
+    console.log(l)
+    let a =0;
+    for(let i=l-1;i<l+1;i++){
+        if(i==l-1){
+            start = Number(l+"0")
+        }else{
+            a=l;
+            end = Number(l+"9")
+        }
+    } 
+    addPosts(start,end);
+}
 
-function addPosts(){
-    let start = 0;
-    let end = 9;
+function addPosts(start=0,end=9){
+    console.log(start,end)
     const starTotal = 5;  
     let egg = "";
     let milk = "";
@@ -466,8 +492,8 @@ function addPosts(){
     let estate = "";
     let mstate = "";
     let wstate = "";
-
- for(i in mockapi){
+ body.innerHTML="";
+ for(let i=start;i<=end;i++){
     if(mockapi[i].egg==true){
         egg="https://www.kindmeal.my/images/icon_egg.png";
         estate="popuptext";
