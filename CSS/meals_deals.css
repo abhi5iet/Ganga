@@ -72,7 +72,7 @@
     background-color: rgba(4,190,90,255);
 }
 #imgbox{
-    box-shadow: 3px 3px lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 #imgbox>img{
@@ -94,12 +94,13 @@ button:hover{
     background: white;
     font-size: 14px;
 }
-#buttons1>#next{
-  margin-left: 85%;
+#buttons1>#next,#buttons2>#next{
+  margin-left: 80%;
   border: 1px solid lightgray;
-  width: 5%;
-  height: 20px;
+  width: 7%;
+  height: 25px;
   background: rgb(238, 238, 238);
+  color: black;
 
 }
 .flexbox{
@@ -124,6 +125,7 @@ button:hover{
     width: 46.5%;
     height: 530px;
     border-radius: 9px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #imgs{
