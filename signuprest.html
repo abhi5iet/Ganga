@@ -12,10 +12,10 @@
 <body>
 
     <header>
-        <div id="logodiv"><img src="./IMG/kind_meal_logo_homepage.png" alt="logo"></div>
-        <div class="headicon" id="linkicon"><img src="./IMG/linkicon_homepage.png" alt="linkicon"></div>
-        <div class="headicon"><img src="./IMG/fbicon_homepage.png" alt="fbicon"></div>
-        <div class="headicon"><img src="./IMG/twittericon_homepage.png" alt="linkicon"></div>
+        <div id="logodiv"><img src="C:\Users\pawan\Ganga\IMG\logo-kindmealpawa.png" alt="logo"></div>
+        <div class="headicon" id="linkicon"><img src="IMG\follow_blog_greypawan.png" alt="linkicon"></div>
+        <div class="headicon"><img src="IMG\follow_facebook_greypawan.png" alt="fbicon"></div>
+        <div class="headicon"><img src="IMG\follow_twitter_greypawan.png" alt="linkicon"></div>
         <div id="btnsdiv">
             <button id="loginbtn">Login</button>
             <button id="fbbtn">Facebook</button>
@@ -104,22 +104,22 @@
                     <label>Your Name</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="firstname">
+                    <input type="text" name="" id="firstname"  placeholder="First name">
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="lastname">
+                    <input type="text" name="" id="lastname"  placeholder="Last name">
                 </div>
                 <div class="form-value">
                     <label>Email</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="email" name="" id="email" style="width: 400px;">
+                    <input type="email" name="" id="email" style="width: 400px;"  placeholder="Email">
                 </div>
                 <div class="form-value">
                     <label>Re-Enter Email</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="email" name="" id="re-email" style="width: 350px;">
+                    <input type="email" name="" id="re-email" style="width: 350px;"  placeholder="Re enter email">
                 </div>
                 <div class="form-value">
                     <label>Password</label>
@@ -131,11 +131,11 @@
                     <label>Username</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="username" style="width: 350px;">
+                    <input type="text" name="" id="username" style="width: 350px;"  placeholder="username">
                 </div>
                 <div class="form-value1">
-                    <label>Birth Date</label>
-                    <select id="selectmonth">
+                    <!-- <label>Birth Date</label> -->
+                    Birth Date <select id="selectmonth">
                         <option>Month</option>
                         <option>Jan</option>
                         <option>Feb</option>
@@ -205,8 +205,8 @@
                     </select>
                 </div>
                 <div class="form-value2">
-                    <label>Country</label>
-                    <select>
+                    <!-- <label>Country</label> -->
+                    Country  <select>
                         <option>Your Country</option>
                         <option>India</option>
                         <option>Nepal</option>
@@ -227,8 +227,8 @@
                     <!-- <input type="text" name="" id="country"> -->
                 </div>
                 <div class="form-value3">
-                    <label>State</label>
-                    <select id="selectstate">
+                    <!-- <label>State</label> -->
+                    State <select id="selectstate">
                         <option>Your State</option>
                         <option>Madhya pradesh</option>
                         <option>Utter pradesh</option>
@@ -243,34 +243,37 @@
                 <div class="form-value4">
 
                     <div>
-                        <label>Gender</label>
-                        <input type="radio" id="male" name="gender" value="male" checked>
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+                        <!-- <label>Gender</label> -->
+                        Gender:- Male   <input type="radio" id="male" name="gender" value="male">
+                        <!-- <label for="male">Male</label> -->
+                       Female <input type="radio" id="female" name="gender" value="female">
+                        <!-- <label for="female">Female</label> -->
                     </div>
 
                 </div>
                 <div class="form-value5">
-                    <label for="photo">Profile Photo</label>
-                    <input type="file" id="photo" value="photo">
+                    <!-- <label for="photo">Profile Photo</label> -->
+                    Profile Photo   <input type="file" id="photo" value="photo">
                 </div>
                 <div class="form-value6">
-                    <label for="checkbox"> I agree to KindMeal.my's Terms & Conditions</label>
-                    <input type="checkbox" id="photo" value="checkbox">
+                    <!-- <label for="checkbox"> I agree to KindMeal.my's Terms & Conditions</label> -->
+                    I agree to KindMeal.my's Terms & Conditions  <input type="checkbox" id="photo" value="checkbox">
                 </div>
-                <input type="submit" value="Set Up My Shop &Deals>>" name="">
-            
-
+               <div class="form-value7">
+                 <!-- <input type="submit" value="Set Up My Shop &Deals"> -->
+                 <button id='button1'>Set Up My Shop &Deals</button>
+               </div>
+             <!-- <button>Set Up My Shop & Deals</button> -->
             </form>
+            <!-- <button onclick="JoinNow()">Set Up My Shop &Deals</button> -->
         </div>
 
 
 
     </div>
-
-    </div>
-    <hr class="clear"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+</div>
+    <hr class="clear">
     <div id="first-grid">
         <div>
             <img src="IMG\image3pawan.png">
@@ -431,74 +434,77 @@
     </div>
 
 
+    <!-- popup start -->
 
-    <!-- <div id="final-grid">
-        <div id="item01">
-            <h3>General</h3>
-            <p>Home<br>
-                Sign Up<br>
-                Businesses/Restaurateurs<br>
-                Advertising<br>
-                Help & FAQ<br>
-                Terms & Conditions<br>
-                Inspiring Partners<br>
-                Lifestyle Ambassadors
-                Jobs & Careers<br>
-                Contact Us</p>
+    <div class="big-modal">
+        <div class="model-contain">
+            <div id="icon">
+                <img src="IMG\logo-kindmealpawa.png">
+                <h1>Join KindMeal For FREE Now</h1>
+                 <p>Please select the type of membership to proceed</p>
+            </div>
+            <div id="page1">
+                <a href="file:///C:/Users/pawan/Ganga/signup.html"> <img src="IMG\imagepawan.png"/></a> 
+               <div>
+                   <h2>Food Lover</h2>
+                   <p>Join FREE to enjoy yummy deals, Share
+                       reviews & meet our community of 
+                       compassionate food lovers
+                   </p>
+               </div>
+             </div>
+             <div id="page2">
+                <a href="file:///C:/Users/pawan/Ganga/signuprest.html"> <img src="IMG\image2pawan.png"/></a> 
+                
+                <div>
+                    <h2>Restaurant/Shop Owner</h2>
+                     <p>List your food outlet, create exciting<br>
+                        vegetarian deals & showcase your delicious<br>
+                        menu for FREE Enjoys our yummy deals<br>
+                        share reviews & meet food lovers too.
+                    </p>
+                </div>
+            </div>
+            <div id="last">
+                <div>
+                    <h3>Member Login</h3>
+                </div>
+                <div>
+                  <h3>Forgot password?</h3>
+                </div>
+              </div>
+            <div class="close">+</div>
         </div>
-        <div id="item02">
-            <h3>Features</h3>
-            <p>
-                Meat-Free Deals<br>
-                Tasty Menus<br>
-                Kind Moments<br>
-                Meat-Free Recipes<br>
-                Member Recommendations<br>
-                Featured Restaurants<br>
-                Vegetarian & Vegan Directory<br>
-                Food Map<br>
-                Become A Superhero<br>
-                Vegan News & Vegetarian Articles<br>
-                Latest Comments
+      </div>
 
-        </div>
-        <div id="item03">
-            <h3>Social Media</h3>
-            <p>
-                KindMeal Widget<br>
-                Facebook<br>
-                Twitter<br>
-                Instagram
-            </p>
 
-            </p>
-        </div>
-        <div id="item04">
-            <h3>Mobile</h3>
-            <p>
-                iPhone & iPod App<br>
-                Android App
-            </p>
-            <h3>Exciting Promos</h3>
-            <p>
-                Gadhimai: Ending Mass Slaughter<br>
-                Free Meals<br>
-                Food Bloggers<br>
-                Uber CHIRP<br>
-                Jane Goodall Contest<br>
-                Win Digi iPhone 6<br>
-                Feed The Poor<br>
-                Win Superhero Gifts<br>
-                Win an iPad Mini 3
-            </p>
-        </div>
-     
-        <div id="terms">
-            <p>Copyright © KindMeal.my, 2014 - 2021. All rights reserved.</p>
-            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
-        </div>
 
-    </div> -->
+        <!-- popup page2(login) -->
+
+  <div class="login">
+    <div class="mylogin">
+      <div id="icon1">
+          <img src="IMG\logo-kindmealpawa.png">
+
+          <form loginform="">
+              <h2>Member login</h2>
+              <input type="text" placeholder="Enter your email">
+              <input type="text" placeholder="Enter your password">
+               
+               <input type="submit" value="Login">
+          </form>
+          
+            <button ><img src='C:\Users\pawan\Ganga\IMG\download.png'/> Login with Facebook</button></a>
+            <div>
+            <h2>Forgot Password</h2>
+            <h2>Not a member?sign up FREE</h2>
+          </div>
+      </div>
+      <div class="close1">+</div>
+    </div>
+</div>
+
+  
     <script src="JS/signup.js"></script>
 </body>
 
