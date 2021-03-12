@@ -5,7 +5,7 @@
 // button.addEventListener('click','file:///C:/Users/pawan/Ganga/signuprest.html')
     
 
-
+var array =[]
 
 function JoinNow(){
    
@@ -26,11 +26,9 @@ username:document.getElementById('username').value,
 country:document.getElementById('selectcountry').value,
 state:document.getElementById('selectstate').value,
 photo:document.getElementById('photo').value,
-gender:document.querySelector('input[name=gender]').value,
+gender:document.querySelector('input[name=gender]:checked').value,
+DOB:birthdate
 
-showdatebirth(){
-    console.log(`${this.month}+" -" + ${this.day}+"-" +${this.year}`)
-}
 
 
 
@@ -39,6 +37,10 @@ showdatebirth(){
 console.log(JoinData)
 var data = JSON.stringify(JoinData)
 localStorage.setItem('join',data)
+
+var get = localStorage.getItem('join')
+array.push(get)
+console.log(array)
 validate()
 
 }
@@ -75,7 +77,7 @@ function validate(){
         alert('Plz enter your password')
     }else if(username.value<=0){
         alert('Plz enter your username')
-    }else if(gender.checked===false) {
+    }else if(gender.value===false) {
         alert('plz select gender')
    }
     else if(checkbox.checked===false) {
@@ -90,6 +92,13 @@ function validate(){
     document.getElementById('password').value = '';
     document.getElementById('username').value = '';
     document.getElementById('checkbox').checked = '';
+    document.getElementById('selectcountry').value='';
+    document.getElementById('selectstate').value = '';
+    document.getElementById('photo').value = '';
+    document.getElementById('selectmonth').value= '';
+    document.querySelector('input[name=gender]:checked').value = '';
+    document.getElementById('selectday').value = '';
+    document.getElementById('selectyear').value = '';
 }
 // console.log(Firstname)
 //  if(Firstnamevalue === ""||Lastnamevalue===""){

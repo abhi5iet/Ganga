@@ -163,7 +163,9 @@ body {
     margin-left: 10px;
     display: inline;
 }
-
+.form-value input:nth-child(2){
+  margin-left: 150px;
+}
    
    .form-value1 select{
     /* display: block; */
@@ -227,18 +229,18 @@ body {
     margin-left: 10px
  } 
 #button1{
- display: block;
-  width: 500px; 
-  margin-top: 20px;
-  padding-left: 50px;
+ display: inline;
+  
+  /* margin-top: 20px;
+  padding-left: 50px; */
   border-radius: 5px;
    height: 25px; 
    margin-left: 10px
 }
 
-   /* .clear{
+   .clear{
        clear:both
-   } */
+   }
 
    #footpara {
     margin-top: 10px;
