@@ -373,6 +373,7 @@ footer {
 #icon01 > p {
   text-align: center;
   color: rgb(32, 4, 4);
+  font-weight: bolder;
 }
 #page1 {
   width: 500px;
@@ -411,6 +412,12 @@ footer {
   height: 180px;
   border: white solid;
   float: left;
+}
+#page1 > div > p {
+  font-weight: bolder;
+}
+#page2 > div > p {
+  font-weight: bolder;
 }
 #page2 > div {
   margin-top: 20px;
@@ -487,15 +494,19 @@ input:nth-child(4) {
   font-size: 25px;
   background-color: #04be5a;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 #icon02 > button {
-  width: 70%;
+  width: 80%;
   display: block;
   font-size: 20px;
   background-color: #3b5998;
   margin-top: 50px;
+  margin-left: 10%;
   float: left;
   text-align: inherit;
+  cursor: pointer;
 }
 
 #icon02 > button > img {
@@ -509,6 +520,7 @@ input:nth-child(4) {
   margin-top: 35px;
   color: rgb(48, 47, 47);
   float: left;
+  cursor: pointer;
 }
 #icon02 > div > h2:nth-child(2) {
   font-size: 18px;
@@ -516,4 +528,5 @@ input:nth-child(4) {
   color: rgb(48, 47, 47);
   text-align: right;
   float: right;
+  cursor: pointer;
 }
