@@ -1,0 +1,34 @@
+#extop{
+    width: 100%;
+    height: 300px;
+}
+#extimg-box{
+    position: absolute;
+    z-index: 10;
+    top: 310px;
+    left: 12%;
+    width: 16%;
+    height: 190px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+#extexts{
+    position: absolute;
+    width: 100%;
+    margin: 280px 0px 10px 0%;
+}
+
+.extend{
+    width: 80%;
+    margin: auto;
+}
+
+.shift-left{
+    margin-left: 29%;
+}
+
+.inline{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+}
