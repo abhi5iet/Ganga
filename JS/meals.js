@@ -1,23 +1,16 @@
 var posts = document.getElementById('posts');
 var buttons1 = document.getElementById('buttons1');
 var buttons2 = document.getElementById('buttons2');
-const body = document.getElementById('posts')
-var mockapi = [{
-    name:"Buon Appetito at table9",
-    back:"../Ganga/IMG/565-4023-l.jpg",
-    votes:15,
-    rating:4.5,
-    discount:30,
-    hotel:"Table9 Cafe & Kitchen" ,
-    location: "Kuala Lumpur, Wilayah Persekutuan",
-    desc:"Indulge in a creative fare of Italian cuisine and Korean-inspired drinks in the cozy atmosphere of Table9.",
+const body = document.getElementById('posts');
+var mockapi = [{ name:"Buon Appetito at table9",back:"../IMG/565-4023-l.jpg",alt:"",votes:15,rating:4.5,discount:30,hotel:"Table9 Cafe & Kitchen" ,location: "Kuala Lumpur, Wilayah Persekutuan",desc:"Indulge in a creative fare of Italian cuisine and Korean-inspired drinks in the cozy atmosphere of Table9.",
     expiry:"12 Days",
     egg:true,
     milk:true,
     drink:false,
+    food:"burger",
     },{
         name:"Trendy Fusion Delights",
-        back:"../Ganga/IMG/618-3514-l.jpg",
+        back:"../IMG/618-3514-l.jpg",
         votes:11,
         rating:5,
         discount:20,
@@ -28,10 +21,11 @@ var mockapi = [{
         egg:false,
         milk:true,
         drink:false,
+        food:"pasta"
         },
         {
             name:"Authentic taste of Hong Kong",
-            back:"../Ganga/IMG/666-4145-l.jpg",
+            back:"../IMG/666-4145-l.jpg",
             votes:0,
             rating:0,
             discount:30,
@@ -42,10 +36,11 @@ var mockapi = [{
             egg:true,
             milk:true,
             drink:false,
+            food:"breakfast",
             },
             {
                 name:"Vegipai's Fusion Indulgence",
-                back:"../Ganga/IMG/591-3151-l.jpg",
+                back:"../IMG/591-3151-l.jpg",
                 votes:19,
                 rating:4.5,
                 discount:20,
@@ -56,10 +51,11 @@ var mockapi = [{
                 egg:true,
                 milk:true,
                 drink:false,
+                food:"breakfast",
                 },
                 {
                     name:"Rawsome Lifestyle",
-                    back:"../Ganga/IMG/590-3137-l.jpg",
+                    back:"../IMG/590-3137-l.jpg",
                     votes:6,
                     rating:4.5,
                     discount:20,
@@ -70,10 +66,11 @@ var mockapi = [{
                     egg:true,
                     milk:false,
                     drink:false,
+                    food:"burger",
                     },
                     {
                         name:"RAWsome Treats",
-                        back:"../Ganga/IMG/508-2267-l.jpg",
+                        back:"../IMG/508-2267-l.jpg",
                         votes:12,
                         rating:5,
                         discount:25,
@@ -84,10 +81,11 @@ var mockapi = [{
                         egg:false,
                         milk:false,
                         drink:false,
+                        food:"pasta",
                         },
                         {
                             name:"Dining Bowl Asian Delicacies",
-                            back:"../Ganga/IMG/383-1189-l.jpg",
+                            back:"../IMG/383-1189-l.jpg",
                             votes:12,
                             rating:4,
                             discount:20,
@@ -98,9 +96,140 @@ var mockapi = [{
                             egg:true,
                             milk:true,
                             drink:false,
+                            food:"salad",
                             }, {
                                 name:"Lovely Fusion Meals",
-                                back:"../Ganga/IMG/633-3874-l.jpg",
+                                back:"../IMG/633-3874-l.jpg",
+                                votes:4,
+                                rating:4,
+                                discount:20,
+                                hotel:"Love Veggie" ,
+                                location: " Klang, Selangor",
+                                desc:"Enjoy a cozy dining experience where we pamper you with a variety of healthy, exquisite and natural foods.",
+                                expiry:"9 Days",
+                                egg:false,
+                                milk:true,
+                                drink:false,
+                                food:"japanesekorean"
+                                }, {
+                                    name:"Hainaese & Local Delights",
+                                    back:"../IMG/660-4040-l.jpg",
+                                    votes:4,
+                                    rating:5,
+                                    discount:20,
+                                    hotel:"GreenLeaf Hut" ,
+                                    location: "Puchong, Selangor",
+                                    desc:"Enjoy our wholesome, healthy home-cooked delights within a comfortable environment.",
+                                    expiry:"6 Days",
+                                    egg:true,
+                                    milk:true,
+                                    drink:false,
+                                    food:"japanesekorean"
+                                    }, {
+                                        name:"Buon Appetito at table9",
+    back:"../IMG/565-4023-l.jpg",
+    votes:15,
+    rating:2,
+    discount:30,
+    hotel:"Table9 Cafe & Kitchen" ,
+    location: "Kuala Lumpur, Wilayah Persekutuan",
+    desc:"Indulge in a creative fare of Italian cuisine and Korean-inspired drinks in the cozy atmosphere of Table9.",
+    expiry:"12 Days",
+    egg:true,
+    milk:true,
+    drink:false,
+    food:"salad",
+    },{
+        name:"Trendy Fusion Delights",
+        back:"../IMG/618-3514-l.jpg",
+        votes:11,
+        rating:3.5,
+        discount:20,
+        hotel:"Vg Seventeen Cafe" ,
+        location: "Bangsar, Wilayah Persekutuan",
+        desc:"Let us pamper you with trendy, healthy and fascinating meals, prepared with fresh and natural ingredients!",
+        expiry:"8 Hours",
+        egg:false,
+        milk:true,
+        drink:false,
+        food:"hightea",
+        },
+        {
+            name:"Authentic taste of Hong Kong",
+            back:"../IMG/666-4145-l.jpg",
+            votes:0,
+            rating:1.5,
+            discount:30,
+            hotel:"Prince Cuisine" ,
+            location: "Kuala Lumpur, Wilayah Persekutuan",
+            desc:"Prince Cuisine indulges you with a taste of authentic Hong Kong food within the cozy atmosphere of our restaurant",
+            expiry:"11 Days",
+            egg:true,
+            milk:true,
+            drink:false,
+            food:"soup",
+            },
+            {
+                name:"Vegipai's Fusion Indulgence",
+                back:"../IMG/591-3151-l.jpg",
+                votes:19,
+                rating:4.5,
+                discount:20,
+                hotel:"Vegipai Cafe" ,
+                location: "Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
+                desc:"Indulge in a healthy and tasty variety of Oriental and Western delicacies, prepared with quality ingredients!",
+                expiry:"9 Days",
+                egg:true,
+                milk:true,
+                drink:false,
+                food:"chinesevegetarian",
+                },
+                {
+                    name:"Rawsome Lifestyle",
+                    back:"../IMG/590-3137-l.jpg",
+                    votes:6,
+                    rating:4.5,
+                    discount:20,
+                    hotel:"Rawsome" ,
+                    location: "Sungai Buloh & 1 Branch",
+                    desc:"Enjoy healthy, guilt-free, raw food meals artfully crafted for a nutritious and delicious experience.",
+                    expiry:"7 Hours",
+                    egg:true,
+                    milk:false,
+                    drink:false,
+                    food:"chinesevegetarian",
+                    },
+                    {
+                        name:"RAWsome Treats",
+                        back:"../IMG/508-2267-l.jpg",
+                        votes:12,
+                        rating:5,
+                        discount:25,
+                        hotel:"The Honest Treat" ,
+                        location: "Bangsar, Kuala Lumpur",
+                        desc:"Indulge in guiltless desserts made with the finest ingredients, handcrafted into decadent treats!",
+                        expiry:"4 Days",
+                        egg:false,
+                        milk:false,
+                        drink:false,
+                        food:"chinesevegetarian",
+                        },
+                        {
+                            name:"Dining Bowl Asian Delicacies",
+                            back:"../IMG/383-1189-l.jpg",
+                            votes:12,
+                            rating:4,
+                            discount:20,
+                            hotel:"Dining Bowl" ,
+                            location: "Ara Damansara, Wilayah Persekutuan",
+                            desc:"Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality!",
+                            expiry:"10 Days",
+                            egg:true,
+                            milk:true,
+                            drink:false,
+                            }, {
+                                name:"Lovely Fusion Meals",
+                                back:"../IMG/633-3874-l.jpg",
                                 votes:4,
                                 rating:4,
                                 discount:20,
@@ -113,7 +242,7 @@ var mockapi = [{
                                 drink:false,
                                 }, {
                                     name:"Hainaese & Local Delights",
-                                    back:"../Ganga/IMG/660-4040-l.jpg",
+                                    back:"../IMG/660-4040-l.jpg",
                                     votes:4,
                                     rating:5,
                                     discount:20,
@@ -126,129 +255,7 @@ var mockapi = [{
                                     drink:false,
                                     }, {
                                         name:"Buon Appetito at table9",
-    back:"../Ganga/IMG/565-4023-l.jpg",
-    votes:15,
-    rating:4.5,
-    discount:30,
-    hotel:"Table9 Cafe & Kitchen" ,
-    location: "Kuala Lumpur, Wilayah Persekutuan",
-    desc:"Indulge in a creative fare of Italian cuisine and Korean-inspired drinks in the cozy atmosphere of Table9.",
-    expiry:"12 Days",
-    egg:true,
-    milk:true,
-    drink:false,
-    },{
-        name:"Trendy Fusion Delights",
-        back:"../Ganga/IMG/618-3514-l.jpg",
-        votes:11,
-        rating:5,
-        discount:20,
-        hotel:"Vg Seventeen Cafe" ,
-        location: "Kuala Lumpur, Wilayah Persekutuan",
-        desc:"Let us pamper you with trendy, healthy and fascinating meals, prepared with fresh and natural ingredients!",
-        expiry:"8 Hours",
-        egg:false,
-        milk:true,
-        drink:false,
-        },
-        {
-            name:"Authentic taste of Hong Kong",
-            back:"../Ganga/IMG/666-4145-l.jpg",
-            votes:0,
-            rating:0,
-            discount:30,
-            hotel:"Prince Cuisine" ,
-            location: "Kuala Lumpur, Wilayah Persekutuan",
-            desc:"Prince Cuisine indulges you with a taste of authentic Hong Kong food within the cozy atmosphere of our restaurant",
-            expiry:"11 Days",
-            egg:true,
-            milk:true,
-            drink:false,
-            },
-            {
-                name:"Vegipai's Fusion Indulgence",
-                back:"../Ganga/IMG/591-3151-l.jpg",
-                votes:19,
-                rating:4.5,
-                discount:20,
-                hotel:"Vegipai Cafe" ,
-                location: "Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
-                desc:"Indulge in a healthy and tasty variety of Oriental and Western delicacies, prepared with quality ingredients!",
-                expiry:"9 Days",
-                egg:true,
-                milk:true,
-                drink:false,
-                },
-                {
-                    name:"Rawsome Lifestyle",
-                    back:"../Ganga/IMG/590-3137-l.jpg",
-                    votes:6,
-                    rating:4.5,
-                    discount:20,
-                    hotel:"Rawsome" ,
-                    location: "Sungai Buloh & 1 Branch",
-                    desc:"Enjoy healthy, guilt-free, raw food meals artfully crafted for a nutritious and delicious experience.",
-                    expiry:"7 Hours",
-                    egg:true,
-                    milk:false,
-                    drink:false,
-                    },
-                    {
-                        name:"RAWsome Treats",
-                        back:"../Ganga/IMG/508-2267-l.jpg",
-                        votes:12,
-                        rating:5,
-                        discount:25,
-                        hotel:"The Honest Treat" ,
-                        location: "Hartamas, Kuala Lumpur",
-                        desc:"Indulge in guiltless desserts made with the finest ingredients, handcrafted into decadent treats!",
-                        expiry:"4 Days",
-                        egg:false,
-                        milk:false,
-                        drink:false,
-                        },
-                        {
-                            name:"Dining Bowl Asian Delicacies",
-                            back:"../Ganga/IMG/383-1189-l.jpg",
-                            votes:12,
-                            rating:4,
-                            discount:20,
-                            hotel:"Dining Bowl" ,
-                            location: "Kuala Lumpur, Wilayah Persekutuan",
-                            desc:"Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality!",
-                            expiry:"10 Days",
-                            egg:true,
-                            milk:true,
-                            drink:false,
-                            }, {
-                                name:"Lovely Fusion Meals",
-                                back:"../Ganga/IMG/633-3874-l.jpg",
-                                votes:4,
-                                rating:4,
-                                discount:20,
-                                hotel:"Love Veggie" ,
-                                location: " Klang, Selangor",
-                                desc:"Enjoy a cozy dining experience where we pamper you with a variety of healthy, exquisite and natural foods.",
-                                expiry:"9 Days",
-                                egg:false,
-                                milk:true,
-                                drink:false,
-                                }, {
-                                    name:"Hainaese & Local Delights",
-                                    back:"../Ganga/IMG/660-4040-l.jpg",
-                                    votes:4,
-                                    rating:5,
-                                    discount:20,
-                                    hotel:"GreenLeaf Hut" ,
-                                    location: "Puchong, Selangor",
-                                    desc:"Enjoy our wholesome, healthy home-cooked delights within a comfortable environment.",
-                                    expiry:"6 Days",
-                                    egg:true,
-                                    milk:true,
-                                    drink:false,
-                                    }, {
-                                        name:"Buon Appetito at table9",
-                                        back:"../Ganga/IMG/565-4023-l.jpg",
+                                        back:"../IMG/565-4023-l.jpg",
                                         votes:15,
                                         rating:4.5,
                                         discount:30,
@@ -259,42 +266,45 @@ var mockapi = [{
                                         egg:true,
                                         milk:true,
                                         drink:false,
+                                        food:"burger",
                                         },{
                                             name:"Trendy Fusion Delights",
-                                            back:"../Ganga/IMG/618-3514-l.jpg",
+                                            back:"../IMG/618-3514-l.jpg",
                                             votes:11,
                                             rating:5,
                                             discount:20,
                                             hotel:"Vg Seventeen Cafe" ,
-                                            location: "Kuala Lumpur, Wilayah Persekutuan",
+                                            location: "Kuala Lumpur",
                                             desc:"Let us pamper you with trendy, healthy and fascinating meals, prepared with fresh and natural ingredients!",
                                             expiry:"8 Hours",
                                             egg:false,
                                             milk:true,
                                             drink:false,
+                                            food:"burger",
                                             },
                                             {
                                                 name:"Authentic taste of Hong Kong",
-                                                back:"../Ganga/IMG/666-4145-l.jpg",
+                                                back:"../IMG/666-4145-l.jpg",
                                                 votes:0,
                                                 rating:0,
                                                 discount:30,
                                                 hotel:"Prince Cuisine" ,
-                                                location: "Kuala Lumpur, Wilayah Persekutuan",
+                                                location: "Ara Damansara, Wilayah Persekutuan",
                                                 desc:"Prince Cuisine indulges you with a taste of authentic Hong Kong food within the cozy atmosphere of our restaurant",
                                                 expiry:"11 Days",
                                                 egg:true,
                                                 milk:true,
                                                 drink:false,
+                                                food:"burger",
                                                 },
                                                 {
                                                     name:"Vegipai's Fusion Indulgence",
-                                                    back:"../Ganga/IMG/591-3151-l.jpg",
+                                                    back:"../IMG/591-3151-l.jpg",
                                                     votes:19,
                                                     rating:4.5,
                                                     discount:20,
                                                     hotel:"Vegipai Cafe" ,
-                                                    location: "Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
+                                                    location: "Taman Tun, Off Jln. Kelang La.., Kuala Lumpur",
                                                     desc:"Indulge in a healthy and tasty variety of Oriental and Western delicacies, prepared with quality ingredients!",
                                                     expiry:"9 Days",
                                                     egg:true,
@@ -303,7 +313,7 @@ var mockapi = [{
                                                     },
                                                     {
                                                         name:"Rawsome Lifestyle",
-                                                        back:"../Ganga/IMG/590-3137-l.jpg",
+                                                        back:"../IMG/590-3137-l.jpg",
                                                         votes:6,
                                                         rating:4.5,
                                                         discount:20,
@@ -317,12 +327,12 @@ var mockapi = [{
                                                         },
                                                         {
                                                             name:"RAWsome Treats",
-                                                            back:"../Ganga/IMG/508-2267-l.jpg",
+                                                            back:"../IMG/508-2267-l.jpg",
                                                             votes:12,
                                                             rating:5,
                                                             discount:25,
                                                             hotel:"The Honest Treat" ,
-                                                            location: "Hartamas, Kuala Lumpur",
+                                                            location: "Old Klang Road, Kuala Lumpur",
                                                             desc:"Indulge in guiltless desserts made with the finest ingredients, handcrafted into decadent treats!",
                                                             expiry:"4 Days",
                                                             egg:false,
@@ -331,7 +341,7 @@ var mockapi = [{
                                                             },
                                                             {
                                                                 name:"Dining Bowl Asian Delicacies",
-                                                                back:"../Ganga/IMG/383-1189-l.jpg",
+                                                                back:"../IMG/383-1189-l.jpg",
                                                                 votes:12,
                                                                 rating:4,
                                                                 discount:20,
@@ -344,12 +354,12 @@ var mockapi = [{
                                                                 drink:false,
                                                                 }, {
                                                                     name:"Lovely Fusion Meals",
-                                                                    back:"../Ganga/IMG/633-3874-l.jpg",
+                                                                    back:"../IMG/633-3874-l.jpg",
                                                                     votes:4,
                                                                     rating:4,
                                                                     discount:20,
                                                                     hotel:"Love Veggie" ,
-                                                                    location: " Klang, Selangor",
+                                                                    location: "Pudu, Selangor",
                                                                     desc:"Enjoy a cozy dining experience where we pamper you with a variety of healthy, exquisite and natural foods.",
                                                                     expiry:"9 Days",
                                                                     egg:false,
@@ -357,12 +367,12 @@ var mockapi = [{
                                                                     drink:false,
                                                                     }, {
                                                                         name:"Hainaese & Local Delights",
-                                                                        back:"../Ganga/IMG/660-4040-l.jpg",
+                                                                        back:"../IMG/660-4040-l.jpg",
                                                                         votes:4,
                                                                         rating:5,
                                                                         discount:20,
                                                                         hotel:"GreenLeaf Hut" ,
-                                                                        location: "Puchong, Selangor",
+                                                                        location: "Sepang, Selangor",
                                                                         desc:"Enjoy our wholesome, healthy home-cooked delights within a comfortable environment.",
                                                                         expiry:"6 Days",
                                                                         egg:true,
@@ -370,12 +380,12 @@ var mockapi = [{
                                                                         drink:false,
                                                                         }, {
                                                                                                                         name:"Vegipai's Fusion Indulgence",
-                                                                                                                        back:"../Ganga/IMG/591-3151-l.jpg",
+                                                                                                                        back:"../IMG/591-3151-l.jpg",
                                                                                                                         votes:19,
                                                                                                                         rating:4.5,
                                                                                                                         discount:20,
                                                                                                                         hotel:"Vegipai Cafe" ,
-                                                                                                                        location: "Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
+                                                                                                                        location: "Damansara Perdana, Off Jln. Kelang La.., Kuala Lumpur",
                                                                                                                         desc:"Indulge in a healthy and tasty variety of Oriental and Western delicacies, prepared with quality ingredients!",
                                                                                                                         expiry:"9 Days",
                                                                                                                         egg:true,
@@ -383,12 +393,12 @@ var mockapi = [{
                                                                                                                         drink:false,
                                                                                                                         }, {
                                                                                                                             name:"Vegipai's Fusion Indulgence",
-                                                                                                                            back:"../Ganga/IMG/591-3151-l.jpg",
+                                                                                                                            back:"../IMG/591-3151-l.jpg",
                                                                                                                             votes:19,
                                                                                                                             rating:4.5,
                                                                                                                             discount:20,
                                                                                                                             hotel:"Vegipai Cafe" ,
-                                                                                                                            location: "Taman Desa, Off Jln. Kelang La.., Kuala Lumpur",
+                                                                                                                            location: "Cheras, Off Jln. Kelang La.., Kuala Lumpur",
                                                                                                                             desc:"Indulge in a healthy and tasty variety of Oriental and Western delicacies, prepared with quality ingredients!",
                                                                                                                             expiry:"9 Days",
                                                                                                                             egg:true,
@@ -396,7 +406,7 @@ var mockapi = [{
                                                                                                                             drink:false,
                                                                                                                             }, {
                                                                                                                                 name:"Vegipai's Fusion Indulgence",
-                                                                                                                                back:"../Ganga/IMG/591-3151-l.jpg",
+                                                                                                                                back:"../IMG/591-3151-l.jpg",
                                                                                                                                 votes:19,
                                                                                                                                 rating:4.5,
                                                                                                                                 discount:20,
@@ -409,7 +419,7 @@ var mockapi = [{
                                                                                                                                 drink:false,
                                                                                                                                 }, {
                                                                                                                                     name:"Vegipai's Fusion Indulgence",
-                                                                                                                                    back:"../Ganga/IMG/591-3151-l.jpg",
+                                                                                                                                    back:"../IMG/591-3151-l.jpg",
                                                                                                                                     votes:19,
                                                                                                                                     rating:4.5,
                                                                                                                                     discount:20,
@@ -422,7 +432,7 @@ var mockapi = [{
                                                                                                                                     drink:false,
                                                                                                                                     }, {
                                                                                                                                         name:"RAWsome Treats",
-                                                                                                                                        back:"../Ganga/IMG/508-2267-l.jpg",
+                                                                                                                                        back:"../IMG/508-2267-l.jpg",
                                                                                                                                         votes:12,
                                                                                                                                         rating:5,
                                                                                                                                         discount:25,
@@ -436,12 +446,12 @@ var mockapi = [{
                                                                                                                                         },
                                                                                                                                         {
                                                                                                                                             name:"Dining Bowl Asian Delicacies",
-                                                                                                                                            back:"../Ganga/IMG/383-1189-l.jpg",
+                                                                                                                                            back:"../IMG/383-1189-l.jpg",
                                                                                                                                             votes:12,
                                                                                                                                             rating:4,
                                                                                                                                             discount:20,
                                                                                                                                             hotel:"Dining Bowl" ,
-                                                                                                                                            location: "Kuala Lumpur, Wilayah Persekutuan",
+                                                                                                                                            location: "Kelana Jaya, Wilayah Persekutuan",
                                                                                                                                             desc:"Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality!",
                                                                                                                                             expiry:"10 Days",
                                                                                                                                             egg:true,
@@ -449,7 +459,7 @@ var mockapi = [{
                                                                                                                                             drink:false,
                                                                                                                                             }, {
                                                                                                                                                 name:"Lovely Fusion Meals",
-                                                                                                                                                back:"../Ganga/IMG/633-3874-l.jpg",
+                                                                                                                                                back:"../IMG/633-3874-l.jpg",
                                                                                                                                                 votes:4,
                                                                                                                                                 rating:4,
                                                                                                                                                 discount:20,
@@ -462,7 +472,40 @@ var mockapi = [{
                                                                                                                                                 drink:false,
                                                                                                                                                 },
         ]
-        var limit = Math.ceil(mockapi.length/10);
+ places={60:"Kuala Lumpur",
+        42:"Petaling Jaya",
+          20: "Ampang",
+          21: "Ara Damansara",
+          22: "Bangsar",
+          23: "Bangsar South",
+          24: "Bukit Bintang",
+          26: "Damansara",
+          27: "Cheras",
+          29: "Damansara Heights",
+          30: "Damansara Perdana",
+          31: "Damansara Utama",
+          62: "Ipoh",
+          33: "Kelana Jaya",
+          34: "Kepong",
+          35: "Klang",
+          37: "Kota Damansara",
+          39: "Mont Kiara",
+          40: "Mutiara Damansara",
+          41: "Old Klang Road",
+          44: "Puchong",
+          45: "Pudu",
+          46: "Putrajaya",
+          48: "Sepang",
+          50: "Seri Kembangan",
+          51: "Setapak",
+          52: "Shah Alam",
+          53: "Sri Hartamas",
+          54: "Sri Petaling",
+          55: "Subang",
+          56: "Taman Desa",
+          58: "Taman Tun",
+}
+var limit = Math.ceil(mockapi.length/10);
 function createButton(){
     var span = document.createElement('span');
     span.setAttribute('class','inline');
@@ -489,17 +532,14 @@ function createButton(){
     let clone = button.cloneNode(true);
     clone.onclick= next;
     buttons1.appendChild(button);
-    buttons2.appendChild(clone)
-
-
+    buttons2.appendChild(clone);
 }
 function next(){
    let data =  localStorage.getItem('val');
    let start = + data[0];
    let end = + data[2];
-   start += 10;
+   start = start + 10;
    end += 10;
- 
    addPosts(start,end);
  }
 createButton()
@@ -523,16 +563,20 @@ function createNums(){
 }
 
 function addPosts(start=0,end=9){
-    console.log(start,end)
-    const starTotal = 5;  
+ body.innerHTML="";
+ for(let i=start;i<=end;i++){
+     createPost(i);
+ }
+
+}
+function createPost(i){
     let egg = "";
     let milk = "";
     let wine = "";
     let estate = "";
     let mstate = "";
     let wstate = "";
- body.innerHTML="";
- for(let i=start;i<=end;i++){
+    const starTotal = 5;  
     if(mockapi[i].egg==true){
         egg="https://www.kindmeal.my/images/icon_egg.png";
         estate="popuptext";
@@ -585,7 +629,50 @@ function addPosts(start=0,end=9){
   const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
   document.querySelector(`.star${i} .stars-inner`).style.width = starPercentageRounded; 
 
- }
+}
+window.onload =  addPosts();
+
+document.getElementById('search').addEventListener('click',search);
+
+function search(){
+    let res = document.getElementById('searchs').value;
+    let food = document.getElementById('option').value;
+    let num = + document.getElementById('city').value;
+    let loc = getLocation(num);
+    console.log(location)
+    body.innerHTML="";
+    search_val = [];
+    for(i in mockapi){
+        var mock_location = (mockapi[i].location).split(',')
+        if(mockapi[i].food == food && res.toLowerCase() == (mockapi[i].hotel).toLocaleLowerCase() && mock_location[0]==loc){
+            search_val.push(i);
+        }
+        else if( mock_location[0]==loc && mockapi[i].food == food ){
+          search_val.push(i);
+        }
+        else if(mock_location[0]==loc){
+            createPost(i);
+        }
+        else if((mockapi[i].hotel).toLocaleLowerCase() == res.toLowerCase()){
+            search_val.push(i);
+        }
+        else  if(mockapi[i].food == food){
+            createPost(i);
+        }
+        else if(food==""&&num==""&&res==""){
+            addPosts();
+        }
+    }
+    console.log(search_val)
+    if(search_val.length>0){
+        body.innerHTML="";
+        for(i of search_val){
+            createPost(i);
+        }
+    }
 
 }
-addPosts();
+
+function getLocation(num){
+       return places[num];
+}
