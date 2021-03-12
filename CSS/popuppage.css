@@ -1,0 +1,88 @@
+#popup{
+   width:600px;
+   height: 800px;
+   margin-left: 380px;
+   border: crimson solid;
+   border: 1px solid;
+   border-radius: 15px;
+   
+}
+#icon{
+    width:500px;
+    height: 200px;
+    border: white solid;
+    margin-left: 8%;
+}
+#icon>img{
+    margin-left: 15%;
+    margin-top: 2%;
+   
+}
+#icon>h1,p{
+    text-align: center;
+    color: rgb(112, 112, 112);
+}
+#page1{
+       width:500px;
+    height: 220px;
+    margin-top: 10px;
+    /* border-width: thin; */
+    /* border: rgb(51, 50, 50) solid; */
+    border: 1px solid;
+    border-radius: 15px;
+   margin-left: 45px 
+}
+#page2{
+    width:500px;
+ height: 220px;
+ border: 1px solid;
+ border-radius: 15px;
+ margin-top: 10px;
+ /* border: rgb(51, 50, 50) solid; */
+ margin-left: 45px 
+}
+#page1>a{
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
+#page2>a{
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+}
+#page1>div{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: rgb(66, 66, 66);
+    width:250px;
+    height: 180px;
+    border: white solid;
+    float: left;
+}
+#page2>div{
+    margin-top: 20px;
+    width:280px;
+    color: rgb(66, 66, 66);
+    height: 180px;
+    text-align:left;
+    /* border: white solid; */
+    /* border-width: thin; */
+    float: left;
+}
+#last>div{
+    width: 280px;
+    height: 50px;
+    border: white solid;
+    float: left;
+    margin-top: 50px;
+    margin-left: 7px;
+
+}
+h3{
+    color: rgb(66, 66, 66);
+}
+#last>div:nth-child(2)>h3{
+    text-align: right;
+    
+}
