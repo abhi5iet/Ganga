@@ -46,7 +46,22 @@ array.push(JSON.parse(get))
 validate()
 
 }
-
+// LOG IN DETAILS
+var loginbtn = document.getElementById("loginBtn");
+function loginn(event) {
+    event.preventDefault();
+    let email_L = document.getElementById("email_L").value;
+    let password_L = document.getElementById("password_L").value;
+    var get = localStorage.getItem('join');
+    console.log(get);
+    get = JSON.parse(get);
+    console.log(get)
+    if (email_L == get.email && password_L === get.password) {
+        alert("Login Successful");
+    } else {
+        alert("Try Again");
+    }
+}
 
 function validate(){
     var firstname =  document.getElementById('firstname')
