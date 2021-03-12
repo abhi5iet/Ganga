@@ -162,10 +162,9 @@ body {
     height: 25px;
     margin-left: 10px;
     display: inline;
+    
 }
-.form-value input:nth-child(2){
-  margin-left: 150px;
-}
+
    
    .form-value1 select{
     /* display: block; */
