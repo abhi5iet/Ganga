@@ -26,7 +26,8 @@ username:document.getElementById('username').value,
 country:document.getElementById('selectcountry').value,
 state:document.getElementById('selectstate').value,
 photo:document.getElementById('photo').value,
-gender:document.querySelector('input[name="gender"].checked').value,
+gender:document.querySelector('input[name="gender"]').value,
+// gender:document.getElementById('gender')
 DOB:birthdate
 
 
@@ -39,8 +40,9 @@ var data = JSON.stringify(JoinData)
 localStorage.setItem('join',data)
 
 var get = localStorage.getItem('join')
-array.push(get)
-console.log(array)
+array.push(JSON.parse(get))
+
+
 validate()
 
 }
