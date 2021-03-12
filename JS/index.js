@@ -13,3 +13,19 @@ function showSlides() {
 }
 
 showSlides();
+
+// popup1 javascript(signuppage)
+document.getElementById('signupbtn').addEventListener('click', function () {
+    document.querySelector('.big-modal').style.display = 'flex';
+});
+document.querySelector('.close').addEventListener('click', function () {
+    document.querySelector('.big-modal').style.display = 'none'
+})
+
+// login page javascript
+document.getElementById('loginbtn').addEventListener('click', function () {
+    document.querySelector('.login').style.display = 'flex';
+});
+document.querySelector('.close1').addEventListener('click', function () {
+    document.querySelector('.mylogin').style.display = 'none'
+})
