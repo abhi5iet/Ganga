@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <div id="logodiv"><img src="C:\Users\pawan\Ganga\IMG\logo-kindmealpawa.png" alt="logo"></div>
+        <div id="logodiv"><img src="IMG\logo-kindmealpawa.png" alt="logo"></div>
         <div class="headicon" id="linkicon"><img src="IMG\follow_blog_greypawan.png" alt="linkicon"></div>
         <div class="headicon"><img src="IMG\follow_facebook_greypawan.png" alt="fbicon"></div>
         <div class="headicon"><img src="IMG\follow_twitter_greypawan.png" alt="linkicon"></div>
@@ -104,10 +104,11 @@
                     <label>Your Name</label>
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="firstname"  placeholder="First name">
+                    <input type="text" name="" id="firstname"  placeholder="First name">  
+                     <input type="text" name="" id="lastname"  placeholder="Last name">
 
                     <!-- <small>First Name</small> -->
-                    <input type="text" name="" id="lastname"  placeholder="Last name">
+                  
                 </div>
                 <div class="form-value">
                     <label>Email</label>
@@ -206,7 +207,7 @@
                 </div>
                 <div class="form-value2">
                     <!-- <label>Country</label> -->
-                    Country  <select>
+                    Country  <select id='selectcountry'>
                         <option>Your Country</option>
                         <option>India</option>
                         <option>Nepal</option>
@@ -243,10 +244,10 @@
                 <div class="form-value4">
 
                     <div>
-                        <!-- <label>Gender</label> -->
-                        Gender:- Male   <input type="radio" id="male" name="gender" value="male">
+                        <label for="radio">Gender</label>
+                         male <input type="radio"  name="gender" id="radio" value="male" checked> female <input type="radio" id="radio" name="gender" value="female">
                         <!-- <label for="male">Male</label> -->
-                       Female <input type="radio" id="female" name="gender" value="female">
+                       
                         <!-- <label for="female">Female</label> -->
                     </div>
 
@@ -259,12 +260,13 @@
                     <!-- <label for="checkbox"> I agree to KindMeal.my's Terms & Conditions</label> -->
                     I agree to KindMeal.my's Terms & Conditions  <input type="checkbox" id="photo" value="checkbox">
                 </div>
-               <div class="form-value7">
+              
                  <!-- <input type="submit" value="Set Up My Shop &Deals"> -->
-                 <button id='button1'>Set Up My Shop &Deals</button>
-               </div>
+               
+             
              <!-- <button>Set Up My Shop & Deals</button> -->
             </form>
+            <button onclick="JoinNow()">Join Now</button>
             <!-- <button onclick="JoinNow()">Set Up My Shop &Deals</button> -->
         </div>
 
@@ -444,7 +446,7 @@
                  <p>Please select the type of membership to proceed</p>
             </div>
             <div id="page1">
-                <a href="file:///C:/Users/pawan/Ganga/signup.html"> <img src="IMG\imagepawan.png"/></a> 
+                <a href="signup.html"> <img src="IMG\imagepawan.png"/></a> 
                <div>
                    <h2>Food Lover</h2>
                    <p>Join FREE to enjoy yummy deals, Share
@@ -454,7 +456,7 @@
                </div>
              </div>
              <div id="page2">
-                <a href="file:///C:/Users/pawan/Ganga/signuprest.html"> <img src="IMG\image2pawan.png"/></a> 
+                <a href="signuprest.html"> <img src="IMG\image2pawan.png"/></a> 
                 
                 <div>
                     <h2>Restaurant/Shop Owner</h2>
@@ -494,7 +496,7 @@
                <input type="submit" value="Login">
           </form>
           
-            <button ><img src='C:\Users\pawan\Ganga\IMG\download.png'/> Login with Facebook</button></a>
+            <button ><img src='IMG\download.png'/> Login with Facebook</button></a>
             <div>
             <h2>Forgot Password</h2>
             <h2>Not a member?sign up FREE</h2>

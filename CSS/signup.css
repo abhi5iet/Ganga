@@ -457,10 +457,20 @@ margin-left: 50px;
   width: 450px;
   height:450px;
   background-color: white;
-     position: relative;
+    
      text-align: center;
      padding: 30px;
      border-radius: 5px;
+     position: relative;
+}
+.close1{
+  position: absolute;
+  top:0;
+  color: rgb(102, 99, 99);
+ 
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor:pointer;
 }
 input{
   width:50%;
@@ -508,15 +518,7 @@ input:nth-child(4){
   text-align: right;
   float: right;
 }
-.close1{
-  position: absolute;
-  top:0;
-  color: rgb(102, 99, 99);
- 
-  font-size: 42px;
-  transform: rotate(45deg);
-  cursor:pointer;
-}
+
   /* #final-grid{
     display: grid;
     grid-gap:20px;
