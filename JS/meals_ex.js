@@ -468,14 +468,46 @@ var mockapi = [{ name:"Buon Appetito at table9",back:"../IMG/565-4023-l.jpg",alt
                                                                                                                                                 drink:false,
                                                                                                                                                 },
         ]
-backimgs = ['https://www.kindmeal.my/photos/shop/1/195-c.jpg','https://www.kindmeal.my/photos/shop/5/547-c.jpg','https://www.kindmeal.my/photos/shop/1/195-c.jpg','https://www.kindmeal.my/photos/shop/3/397-c.jpg','https://www.kindmeal.my/photos/shop/5/545-c.jpg']
-console.log(backimgs[3]);
-let pargms = new URLSearchParams(window.location.search);
+backimgs = ['https://www.kindmeal.my/photos/shop/1/195-c.jpg','https://www.kindmeal.my/photos/shop/5/547-c.jpg','https://www.kindmeal.my/photos/shop/1/195-c.jpg','https://www.kindmeal.my/photos/shop/3/397-c.jpg','https://www.kindmeal.my/photos/shop/5/545-c.jpg'];
 function load_secondpage(){
-    let i = pargms.get('q')
-    i = + i;
-    ran = Math.floor((Math.random())*4)
-    console.log(ran)
+    let url = new URL(window.location.href);
+    console.log(url);
+    let pargms = new URLSearchParams(location.search);
+    let num = pargms.get('q');
+    console.log(num);
+    let i = + num;
+    ran = Math.floor((Math.random())*4);
+    let egg = "";
+    let milk = "";
+    let wine = "";
+    let estate = "";
+    let mstate = "";
+    let wstate = "";
+    const starTotal = 5;  
+    if(mockapi[i].egg==true){
+        egg="https://www.kindmeal.my/images/icon_egg.png";
+        estate="popuptext";
+    }
+    if(mockapi[i].milk==true){
+       milk="https://www.kindmeal.my/images/icon_milk.png";
+       mstate="popuptext";
+    }
+    if(mockapi[i].drink==true){
+        wine="https://www.kindmeal.my/images/icon_alcohol.png";
+        wstate="popuptext";
+    }
+    if(mockapi[i].egg==false){
+        egg="https://www.kindmeal.my/images/icon_egg_disabled.png";
+        estate="disabled";
+    }
+    if(mockapi[i].milk==false){
+        milk="https://www.kindmeal.my/images/icon_milk_disabled.png";
+        mstate="disabled";
+    }
+    if(mockapi[i].drink==false){
+        wine="https://www.kindmeal.my/images/icon_alcohol_disabled.png";
+        wstate="disabled";
+    }
     document.getElementById("placeholder_ex").innerHTML =`<div id="extop" style="background-image: url(${backimgs[ran]});border-radius:5px;">
     <div class="inline">
          <div id="extimg-box">
@@ -537,7 +569,13 @@ function load_secondpage(){
           </ul>
           <p>*** Note ***<br/>
              You may also request to exclude meat from other menu items that are not marked as "Vegetarian".</p>
-         <h2 class="inline" style="margin-right: 20px;">Rating</h2><div class=star${i} style="display:inline-block"><div class="stars-outer inline"><div class="stars-inner inline"></div></div></div><span id="votes_ex">(${mockapi[i].votes})</span>
+             <h1>Diet Restriction</h1>
+             <div class="flex" style="flex-wrap:nowrap;width:40%;">
+             <div style="flex-direction: row;flex-grow: 1;width: 0%; padding-top: 10px;" class="borderright">
+             <span class="selected icons popup"><img  class="scale" src=${egg} alt=""><span class=${estate} id="myPopup">Contains egg</span></span><span class="selected icons popup"><img class="scale" src=${milk} alt=""><span class=${mstate} id="myPopup1">Contains Dairy products<br/>(i.e milk,cheese)</span></span><span class="selected icons popup" ><img class="scale" src=${wine} alt=""><span class=${wstate} id="myPopup2">Contains Alcohol<br/>(i.e beer,wine,liqour)</span></span>
+         </div>
+         </div>
+         <h2 class="inline" style="margin-right: 20px;">Rating</h2><div class=star${i} style="display:inline-block"><div class="stars-outer inline"><div class="stars-inner" ></div></div></div><span id="votes_ex">(${mockapi[i].votes})</span>
      </div>
     <div class="flexbox" id="textbox2_ex">
      <h2>Location</h2>
@@ -573,13 +611,15 @@ function load_secondpage(){
         </table>
     </div>
     </div>
-    <div class="extend" id="bottom_imgbox_ex">
-    
-    </div>
     </div>`;
+    starRating(i);
+}
+function starRating(i){
+    let starTotal = 5;
     const starPercentage = (mockapi[i].rating / starTotal) * 100;
     const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
     document.querySelector(`.star${i} .stars-inner`).style.width = starPercentageRounded; 
 }
+
 
 window.onload = load_secondpage();

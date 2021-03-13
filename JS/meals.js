@@ -603,7 +603,7 @@ function createPost(i){
     }
      var div = document.createElement('div');
      div.setAttribute('class','flex');
-     div.innerHTML = ` <div onclick="newPage(i)" id="imgs" style="background-image: url(${mockapi[i].back});">
+     div.innerHTML = ` <div onclick="newPage(${i})" id="imgs" style="background-image: url(${mockapi[i].back});">
      <div class="top-left"><h2 class="circle" style="color:rgb(70, 69, 69); margin-top:5px; text-align: center; font-size: 22px;">-${mockapi[i].discount}%</h2></div>
      <h2><span class="background">${mockapi[i].name}</span></h2>
  </div>
@@ -678,7 +678,7 @@ function getLocation(num){
 }
 
 function newPage(i){
-    location.href = `http://127.0.0.1:5500/meals_ex.html#?q=${i}`
+    location.href = `http://127.0.0.1:5500/meals_ex.html?q=${i}`
 }
 
 
