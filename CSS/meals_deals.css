@@ -1,3 +1,11 @@
+a{
+  text-decoration: none;
+  color: rgba(45,150,255,255);
+}
+a:hover{
+  text-decoration: underline;
+}
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -16,15 +24,17 @@
   .fa:hover {
     opacity: 0.7;
 }
+body{
+  background: linear-gradient(0deg,#e8e8e8 0%, #f9f9f9 51%,#f8f8f8c2 75%);
+}
 #topbody,#bottombody{
-    background: rgba(240,240,240,255);
+    background: rgba(230,230,230,255);
 }
 #mainbody,#top{
     width: 80%;
     margin: auto;
     padding: 2%;
 }
-
 .inline{
     display: inline;
     font-family: 'Roboto', sans-serif;
@@ -39,7 +49,7 @@
     color: rgb(167, 167, 167);
 }
 
-#top>form>input,select,button{
+#top>button,#top>form>input,select{
     width: 15%;
     margin: 1%;
     padding: 0.6%;
@@ -52,7 +62,7 @@
     width: 22%;
   
 }
-#top>form>button{
+#top>button{
     width: 16%;
     border-radius: 5px;
     border: 0px;
@@ -62,7 +72,7 @@
     padding: 0.9%;
     cursor: pointer;
 }
-#top>form>button:hover{
+#top>button:hover{
     opacity: 0.7;
 }
 #search{
@@ -72,34 +82,36 @@
     background-color: rgba(4,190,90,255);
 }
 #imgbox{
-    box-shadow: 3px 3px lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
 #imgbox>img{
     width: 100%;
 }
-button{
+button,input{
   outline: none;
 }
 button:hover{
   opacity: 0.7;
+  border-bottom:  1px solid rgb(109, 109, 109);
 }
 #buttons1>button,#buttons2>button{
     width: 2%;
     padding: 0.2%;
-    margin: 0.1%;
+    margin: 0.5%;
     margin-top: 3%;
     border: 0px;
     color: rgb(30,129,176);
     background: white;
     font-size: 14px;
 }
-#buttons1>#next{
-  margin-left: 85%;
+#buttons1>#next,#buttons2>#next{
+  margin-left: 75%;
   border: 1px solid lightgray;
-  width: 5%;
-  height: 20px;
+  width: 7%;
+  height: 25px;
   background: rgb(238, 238, 238);
+  color: black;
 
 }
 .flexbox{
@@ -115,7 +127,6 @@ button:hover{
    /* flex-grow: 1;*/
    
 }
-
 #posts{
     width: 100%;
 }
@@ -124,6 +135,7 @@ button:hover{
     width: 46.5%;
     height: 530px;
     border-radius: 9px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #imgs{
@@ -151,7 +163,7 @@ button:hover{
     background: rgb(0, 0, 0);
     background: rgba(19, 19, 19, 0.7);
     padding: 5px; 
-    width: 98.3%;
+    width: 98%;
  }
  .padded{
      padding: 2%;
@@ -191,7 +203,8 @@ button:hover{
       font-size: 19px;
       border: 0px;
       border-radius: 7px;
-      margin-right:29%;
+      margin-right:27%;
+      margin-left: 2%;
   }
   .post-buttons:hover{
         opacity: 0.7;
