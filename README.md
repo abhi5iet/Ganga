@@ -19,4 +19,5 @@ Kindmeal.my is a website that has a lot of information on everything that is rel
 * Use of URLSearchParagms for getting the data and showing in details page of meals_deals.
 * login logout functionality using local storage.
 * Popup Signup and sign in page
+
 We tried to make it dynamic and have added functionalities using javascript ,css ,and html .We created the repository and added seperate branches to work on each part of the pages, We have tried to clone pages as much as possible within the limited time frame.
