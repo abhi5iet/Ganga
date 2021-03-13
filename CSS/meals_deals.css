@@ -1,3 +1,11 @@
+a{
+  text-decoration: none;
+  color: rgba(45,150,255,255);
+}
+a:hover{
+  text-decoration: underline;
+}
+
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -85,6 +93,7 @@ button,input{
 }
 button:hover{
   opacity: 0.7;
+  border-bottom:  1px solid rgb(109, 109, 109);
 }
 #buttons1>button,#buttons2>button{
     width: 2%;

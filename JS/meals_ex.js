@@ -1,7 +1,3 @@
-var posts = document.getElementById('posts');
-var buttons1 = document.getElementById('buttons1');
-var buttons2 = document.getElementById('buttons2');
-const body = document.getElementById('posts');
 var mockapi = [{ name:"Buon Appetito at table9",back:"../IMG/565-4023-l.jpg",alt:"",votes:15,rating:4.5,discount:30,hotel:"Table9 Cafe & Kitchen" ,location: "Kuala Lumpur, Wilayah Persekutuan",desc:"Indulge in a creative fare of Italian cuisine and Korean-inspired drinks in the cozy atmosphere of Table9.",
     expiry:"12 Days",
     egg:true,
@@ -472,213 +468,118 @@ var mockapi = [{ name:"Buon Appetito at table9",back:"../IMG/565-4023-l.jpg",alt
                                                                                                                                                 drink:false,
                                                                                                                                                 },
         ]
- places={60:"Kuala Lumpur",
-        42:"Petaling Jaya",
-          20: "Ampang",
-          21: "Ara Damansara",
-          22: "Bangsar",
-          23: "Bangsar South",
-          24: "Bukit Bintang",
-          26: "Damansara",
-          27: "Cheras",
-          29: "Damansara Heights",
-          30: "Damansara Perdana",
-          31: "Damansara Utama",
-          62: "Ipoh",
-          33: "Kelana Jaya",
-          34: "Kepong",
-          35: "Klang",
-          37: "Kota Damansara",
-          39: "Mont Kiara",
-          40: "Mutiara Damansara",
-          41: "Old Klang Road",
-          44: "Puchong",
-          45: "Pudu",
-          46: "Putrajaya",
-          48: "Sepang",
-          50: "Seri Kembangan",
-          51: "Setapak",
-          52: "Shah Alam",
-          53: "Sri Hartamas",
-          54: "Sri Petaling",
-          55: "Subang",
-          56: "Taman Desa",
-          58: "Taman Tun",
-}
-var limit = Math.ceil(mockapi.length/10);
-function createButton(){
-    var span = document.createElement('span');
-    span.setAttribute('class','inline');
-    span.innerHTML="Page:"
-    let cloneSpan = span.cloneNode(true);
-    buttons1.appendChild(span);
-    buttons2.appendChild(cloneSpan)
-    for(i=0;i<limit;i++){
-        let button = document.createElement('button');
-        button.setAttribute('id',i);
-        button.setAttribute('class','inline')
-        button.innerHTML = i+1;
-        button.onclick = createNums;
-        let cloneBut = button.cloneNode(true);
-        cloneBut.onclick = createNums;
-        buttons1.append(button);
-        buttons2.appendChild(cloneBut)
-    }
-    let button = document.createElement('button');
-    button.setAttribute('id','next');
-    button.setAttribute('class','inline');
-    button.innerHTML="Next";
-    button.onclick = next;
-    let clone = button.cloneNode(true);
-    clone.onclick= next;
-    buttons1.appendChild(button);
-    buttons2.appendChild(clone);
-}
-function next(){
-   let data =  localStorage.getItem('val');
-   let start = + data[0];
-   let end = + data[2];
-   start = start + 10;
-   end += 10;
-   addPosts(start,end);
- }
-createButton()
-function createNums(){
-    localStorage.clear();
-    let cur = event.target.id;
-    let l = Number(cur);
-    //console.log(l,a,cur)
-    let a =0;
-    for(let i=l-1;i<l+1;i++){
-        if(i==l-1){
-            start = Number(l+"0")
-        }else{
-            a=l;
-            end = Number(l+"9")
-        }
-    }
-     let vars = [start,end];
-     localStorage.setItem('val',vars);
-    addPosts(start,end);
-}
-
-function addPosts(start=0,end=9){
- body.innerHTML="";
- for(let i=start;i<=end;i++){
-     createPost(i);
- }
-
-}
-function createPost(i){
-    let egg = "";
-    let milk = "";
-    let wine = "";
-    let estate = "";
-    let mstate = "";
-    let wstate = "";
-    const starTotal = 5;  
-    if(mockapi[i].egg==true){
-        egg="https://www.kindmeal.my/images/icon_egg.png";
-        estate="popuptext";
-    }
-    if(mockapi[i].milk==true){
-       milk="https://www.kindmeal.my/images/icon_milk.png";
-       mstate="popuptext";
-    }
-    if(mockapi[i].drink==true){
-        wine="https://www.kindmeal.my/images/icon_alcohol.png";
-        wstate="popuptext";
-    }
-    if(mockapi[i].egg==false){
-        egg="https://www.kindmeal.my/images/icon_egg_disabled.png";
-        estate="disabled";
-    }
-    if(mockapi[i].milk==false){
-        milk="https://www.kindmeal.my/images/icon_milk_disabled.png";
-        mstate="disabled";
-    }
-    if(mockapi[i].drink==false){
-        wine="https://www.kindmeal.my/images/icon_alcohol_disabled.png";
-        wstate="disabled";
-    }
-     var div = document.createElement('div');
-     div.setAttribute('class','flex');
-     div.innerHTML = ` <div onclick="newPage(i)" id="imgs" style="background-image: url(${mockapi[i].back});">
-     <div class="top-left"><h2 class="circle" style="color:rgb(70, 69, 69); margin-top:5px; text-align: center; font-size: 22px;">-${mockapi[i].discount}%</h2></div>
-     <h2><span class="background">${mockapi[i].name}</span></h2>
- </div>
- <div class="padded" style="margin-bottom:2px;">
-     <span class="inline"><p style="font-size: 18px; font-weight: 600; color: rgb(151, 151, 151);" class="inline">${mockapi[i].hotel}</p></span><pre class="inline"> - </pre><span class="lighter inline" style="font-size: 14px;">${mockapi[i].location}</span>
- </div>
-<p class="padded" style="margin: 3px 3px 7px 3px;">${mockapi[i].desc}</p>
-<button onclick="newPage(i)" class="inline post-buttons">Get FREE Coupon</button> <div class=star${i} style="display:inline-block;"><div class="stars-outer"><div class="stars-inner"></div></div></div><p class="inline" style="margin-left: 2%; font-size: 12px;">(15)</p>
-<div class=" bordertop" style="margin-bottom: 0px;display: flex; flex-wrap: nowrap; padding: 0% 2%;margin-top: 10px;height: 55px;" >
-     <div style="flex-direction: row;flex-grow: 1;width: 0%; padding-top: 10px;" class="borderright">
-         <span class="selected icons popup"><img  class="scale" src=${egg} alt=""><span class=${estate} id="myPopup">Contains egg</span></span><span class="selected icons popup"><img class="scale" src=${milk} alt=""><span class=${mstate} id="myPopup1">Contains Dairy products<br/>(i.e milk,cheese)</span></span><span class="selected icons popup" ><img class="scale" src=${wine} alt=""><span class=${wstate} id="myPopup2">Contains Alcohol<br/>(i.e beer,wine,liqour)</span></span>
+backimgs = ['https://www.kindmeal.my/photos/shop/1/195-c.jpg','https://www.kindmeal.my/photos/shop/5/547-c.jpg','https://www.kindmeal.my/photos/shop/1/195-c.jpg','https://www.kindmeal.my/photos/shop/3/397-c.jpg','https://www.kindmeal.my/photos/shop/5/545-c.jpg']
+console.log(backimgs[3]);
+let pargms = new URLSearchParams(window.location.search);
+function load_secondpage(){
+    let i = pargms.get('q')
+    i = + i;
+    ran = Math.floor((Math.random())*4)
+    console.log(ran)
+    document.getElementById("placeholder_ex").innerHTML =`<div id="extop" style="background-image: url(${backimgs[ran]});border-radius:5px;">
+    <div class="inline">
+         <div id="extimg-box">
+             <img style="width: 100%;" src="https://www.kindmeal.my/photos/shop/5/547-4031-m.jpg" alt="../IMG/547-4031-m.jpg">
+         </div>
+         <div id="extexts"class="inline">
+             <div style="background: rgba(255, 255, 255, 0.158);">
+                 <h1 style=" background: rgba(255, 255, 255, 0.158);" class="shift-left">${mockapi[i].hotel}</h1>
+             </div>
+           
+             <div style=" background: white;" class="shift-left" id="buttons_ex">
+                 <button >Overview</button><button style="  border-bottom: 3px solid rgba(4,190,90,255);">Meal Deals</button><button >Food Menu</button><button >Location</button> <a href="#" class="fa fa-twitter inline"></a>
+             </div>
+         </div>
+    </div>
+    </div>
+    <div class="extend shadow" id="mainbodyex">
+    <h1 style="width: 98%;padding: 1%;background:rgba(236,236,236,255);text-align: center; margin-top: 100px;border-radius: 9px;">
+     ${mockapi[i].name}
+    </h1>
+    <div class="flex">
+     <div class="flexbox" id="eximgbox">
+         <img width="100%" src="${mockapi[i].back}" alt="">
      </div>
-     <div style="flex-direction: row;flex-grow: 1; text-align:center; " class="borderright">
-         <p style="margin: 3px 1px 1px 1px;">kindMEal Discount</p>
-         <h2 style="color: red;  margin:1px">${mockapi[i].discount} off</h2>
+     <div class="flexbox flex" id="exboxs">
+         <div class="flexbox" id="topimg_box1">
+             <p style="text-align: center;">Normal price</p>
+             <h1 style="font-size:30px;text-align: center;">RM15.00</h1>
+             <p style="color: rgb(153, 153, 153); text-align: center;">&  Above</p>
+         </div>
+         <div class="flexbox align-center" id="topimg_box2">
+             <p>KindMeal Discount</p>
+             <h1 style="font-size:40px;text-align: center;color: rgb(3, 145, 3);">${mockapi[i].discount}% Off</h1>
+         </div>
+         <div id="toplower_ex" class="align-center" >
+             <p><b>No pre-payment or booking needed. Get coupon & dine instantly!</b></p>
+             <button id="bluebutton">Get FREE Coupon</button>
+             <p style="font-size: small;" class="inline">Grab this KindMeal Coupon now to enjoy ${mockapi[i].discount}% off!</p><pre class="inline">  </pre><a href="" style="font-size: small;" class="inline""> How it works</a>
+         </div>
      </div>
-     <div style="flex-direction: row;flex-grow: 1; text-align:center;  width: 0%;">
-         <p style="margin: 1px;">Expires in</p>
-         <h2 style="color: rgb(119, 119, 119);  margin:1px">${mockapi[i].expiry}</h2>
-     </div>`;
-     body.append(div);
-  const starPercentage = (mockapi[i].rating / starTotal) * 100;
-  const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-  document.querySelector(`.star${i} .stars-inner`).style.width = starPercentageRounded; 
-
+    </div>
+    <div>
+     <h4 style="text-align:center;background:lightgray;padding: 1%;">Dine here to earn <span id="double">DOUBLE Points</span> Points and win exciting prizes!</h4>
+    </div>
+    <div class="flex" style="line-height: 1.6;">
+     <div class="flexbox" id="textbox1_ex">
+          <h2>Delicious Details</h2>
+          <p><span id="hotel_name">${mockapi[i].hotel}</span> indulges you with a taste of authentic Hong Kong food within the cozy atmosphere of our restaurant.</p>
+          <p>Prepared with the quality ingredients and special recipes, each dish is crafted with heart to delight you in flavor and aesthetics.</p>
+          <p>Feast on any of our meat-free items, including:</p>
+          <ul>
+              <li>${mockapi[i].food}</li>
+              <li>Hong Kong Style</li>
+              <li>Fried Rice</li>
+              <li>Noodles</li>
+              <li>Vegetables</li>
+              <li>Egg</li>
+              <li>Beverages</li>
+          </ul>
+          <p>*** Note ***<br/>
+             You may also request to exclude meat from other menu items that are not marked as "Vegetarian".</p>
+         <h2 class="inline" style="margin-right: 20px;">Rating</h2><div class=star${i} style="display:inline-block"><div class="stars-outer inline"><div class="stars-inner inline"></div></div></div><span id="votes_ex">(${mockapi[i].votes})</span>
+     </div>
+    <div class="flexbox" id="textbox2_ex">
+     <h2>Location</h2>
+     <p>Lot 1-06, The Scott Garden, 289 Jalan Klang Lama, 58000 Kuala Lumpur, Kuala Lumpur.<br/>Opens: Daily: 11am - 10pm <br/>
+         Tel: 011-1192 2398 <br/><br>
+        <a href="https://www.kindmeal.my/PrinceCuisine/location.htm">View Details & Location Map »</a> </p>
+    
+        <h1>Terms & Conditions</h1>
+        <table>
+            <tr>
+                <td style="width: 30%;"><b>Coupon Validity</b></td>
+                <td>Must use coupon by Mar 17th, 2021</td>
+            </tr>
+            <tr>
+             <td><b>Exclusivity</b></td>
+             <td>Valid with other KindMeal.my coupons only</td>
+         </tr>
+         <tr>
+             <td><b>Reservation</b></td>
+             <td>Not required</td>
+         </tr>
+         <tr>
+             <td><b>Repeat Customers</b></td>
+             <td>You can get this coupon once per week</td>
+         </tr>
+         <tr>
+             <td style="text-align: start;"><b>Dining Terms</b></td>
+             <td><ul style="font-size: 14px;">
+                 <li>No Service Charge & SST</li>
+                 <li>You may also request to exclude meat from other <br/> menu items that are not marked as "Vegetarian"</li>
+             </ul></td>
+         </tr>
+        </table>
+    </div>
+    </div>
+    <div class="extend" id="bottom_imgbox_ex">
+    
+    </div>
+    </div>`;
+    const starPercentage = (mockapi[i].rating / starTotal) * 100;
+    const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
+    document.querySelector(`.star${i} .stars-inner`).style.width = starPercentageRounded; 
 }
-window.onload =  addPosts();
 
-document.getElementById('search').addEventListener('click',search);
-
-function search(){
-    let res = document.getElementById('searchs').value;
-    let food = document.getElementById('option').value;
-    let num = + document.getElementById('city').value;
-    let loc = getLocation(num);
-    console.log(location)
-    body.innerHTML="";
-    search_val = [];
-    for(i in mockapi){
-        var mock_location = (mockapi[i].location).split(',')
-        if(mockapi[i].food == food && res.toLowerCase() == (mockapi[i].hotel).toLocaleLowerCase() && mock_location[0]==loc){
-            search_val.push(i);
-        }
-        else if( mock_location[0]==loc && mockapi[i].food == food ){
-          search_val.push(i);
-        }
-        else if(mock_location[0]==loc){
-            createPost(i);
-        }
-        else if((mockapi[i].hotel).toLocaleLowerCase() == res.toLowerCase()){
-            search_val.push(i);
-        }
-        else  if(mockapi[i].food == food){
-            createPost(i);
-        }
-        else if(food==""&&num==""&&res==""){
-            addPosts();
-        }
-    }
-    console.log(search_val)
-    if(search_val.length>0){
-        body.innerHTML="";
-        for(i of search_val){
-            createPost(i);
-        }
-    }
-
-}
-
-function getLocation(num){
-       return places[num];
-}
-
-function newPage(i){
-    location.href = `http://127.0.0.1:5500/meals_ex.html#?q=${i}`
-}
-
-
+window.onload = load_secondpage();
