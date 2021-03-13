@@ -44,6 +44,30 @@ console.log(array)
 validate()
 
 }
+// LOG IN DETAILS
+var loginbtn = document.getElementById("loginBtn");
+function loginn(event) {
+    event.preventDefault();
+    let email_L = document.getElementById("email_L").value;
+    let password_L = document.getElementById("password_L").value;
+    var get = localStorage.getItem('join');
+    console.log(get);
+    get = JSON.parse(get);
+    console.log(get)
+    if (email_L == get.email && password_L === get.password) {
+        alert("Login Successful");
+    } else {
+        alert("Try Again");
+    }
+}
+/*
+​
+
+*/
+
+loginbtn.addEventListener("click", loginn);
+
+
 
 
 function validate(){
@@ -58,11 +82,7 @@ function validate(){
     var year = document.getElementById('selectmonth')
     var gender =  document.getElementById('gender')
     var checkbox =  document.getElementById('checkbox')
-    // const Firstnamevalue = Firstname.value.trim();
-    // // const Lastnamevalue = Lastname.value.trim();
-    // const Email = Email.value.trim();
-    // const Reemail = Reemail.value.trim();
-    // const Password = Password.value.trim();
+    
     
     if(firstname.value.length<=0){
         alert('Plz enter your firstname')
@@ -100,15 +120,7 @@ function validate(){
     document.getElementById('selectday').value = '';
     document.getElementById('selectyear').value = '';
 }
-// console.log(Firstname)
-//  if(Firstnamevalue === ""||Lastnamevalue===""){
-//      alert(error)
-//      Error(Firstname,'firstname&Lastname cannot be blank')
-//  }else if(Firstnamevalue.length<=2){
-//      Error(Firstname,'firstname&lastname min 3 char')
-//  }else{
-//      Set(Firstname)
-//  }
+
 
 
 
@@ -131,9 +143,4 @@ document.querySelector('.close1').addEventListener('click',function(){
     document.querySelector('.mylogin').style.display = 'none'
 })
 
-// document.getElementById('.memberlogin').addEventListener('click',function(){
-//     document.querySelector('.login').style.display = 'flex';
-// });
-// document.querySelector('.close1').addEventListener('click',function(){
-//     document.querySelector('.mylogin').style.display = 'none'
-// })
+
