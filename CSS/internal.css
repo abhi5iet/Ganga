@@ -1,0 +1,602 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#logo-containers {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url(./8001.jpg);
+    background-size: cover;
+    color: rgb(219, 201, 215);
+    display: flex;
+    align-items: flex-end;
+}
+
+#receipe-info {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid #dddddd;
+}
+
+video {
+    margin-top: 50px;
+}
+
+#recipe-dis-strip {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 28px;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #d8d8d8);
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#food-discrip {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+#food-img {
+    width: 50%;
+    height: 100%;
+}
+
+#food-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+#about-food {
+    width: 50%;
+    height: 100%;
+}
+
+#about-food>#a,
+#about-food>#b,
+#about-food>#c,
+#about-food>#d {
+    width: 50%;
+    height: 45%;
+    float: left;
+    text-align: center;
+    border: 0.5px solid #dddddd;
+}
+
+#e {
+    width: 100%;
+    height: 10%;
+    float: left;
+    border: 0.5px solid #dddddd;
+}
+
+#about-food>div>h2 {
+    font-size: 24px;
+    color: #333333;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-top: 70px;
+}
+
+#about-food>div>h1 {
+    font-size: 30px;
+    color: #2bb673;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#ingradient {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#Secret-Ingredients>h1,
+#cooking-Directions>h1 {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 24px;
+    color: #333333;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#Secret-Ingredients>ul,
+#cooking-Directions>ol {
+    margin-left: 80px;
+    padding-top: 20px;
+    color: #333333;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#recipe-photos {
+    width: 100%;
+    height: 200px;
+}
+
+.receipe-photo {
+    width: 40%;
+    height: 180px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.text1 {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #ffffff
+}
+
+.shared-pic1 {
+    width: 48%;
+    height: 140px;
+    float: left;
+    margin-right: 4%;
+}
+
+.shared-pic2 {
+    width: 48%;
+    height: 140px;
+    float: left;
+}
+
+.receipe-photo>div>img {
+    width: 100%;
+    height: 140px;
+}
+
+#reviews {
+    width: 80%;
+    height: 270px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#ratings {
+    width: 30%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    margin-right: 30px;
+    float: left;
+    font-size: 14px;
+    color: #242222;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#ratings>.stars {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#comments {
+    width: 67%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    float: left;
+    font-size: 14px;
+    color: #242222;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#rating-strip,
+#comment-strip {
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+}
+
+#ratings>button {
+    font-family: 'Roboto', Arial;
+    width: 150px;
+    height: 40px;
+    background-color: #f53838;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+#comment-strip {
+    text-align: left;
+}
+
+.comment-text {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#comment-input>button {
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #f53838;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+#more-recipes {
+    width: 80%;
+    height: 330px;
+    border: 1px solid #dddddd;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.more-receipe-info,
+.more-receipe-name {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.more-receipe-img {
+    width: 98%;
+    height: 180px;
+    margin-top: 15px;
+    display: grid;
+    grid-template: "img1 img2 img3 img4 img5";
+    gap: 10px;
+    margin: auto;
+}
+
+.more-receipe-img>div>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.more-receipe-name {
+    margin-top: 15px;
+    width: 98%;
+    margin-top: 15px;
+    display: grid;
+    grid-template: "text-1 text-2 text-3 text-4 text-5";
+    gap: 10px;
+    margin: auto;
+}
+
+.more-receipe-name>div {
+    margin-top: 10px;
+    height: 30px;
+    width: 180px;
+}
+
+.more-receipe-name>div>a {
+    text-decoration: none;
+    color: #2e2b2b;
+    font-size: 14px;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.more-receipe-info-text {
+    float: left;
+    margin-right: 300px;
+    font-size: 24px;
+    color: #1b1a1a;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.more-receipe-info-link1 {
+    float: left;
+    margin-right: 3%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.more-receipe-info-link2 {
+    float: left;
+    margin-top: 30px;
+}
+
+.more-receipe-info-link1>a,
+.more-receipe-info-link2>a {
+    color: #2184ff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    -webkit-text-size-adjust: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#advertise {
+    border: 1px solid #dddddd;
+    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#advertise>img {
+    width: 100%;
+    height: 300px;
+}
+
+#follow-info>button:nth-child(1) {
+    font-family: 'Roboto', Arial;
+    width: 150px;
+    height: 40px;
+    line-height: 19px;
+    background-color: #f53838;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border: 1px solid #dddddd;
+}
+
+#btn002 {
+    background: rgb(100, 99, 99);
+    width: 150px;
+    height: 40px;
+    line-height: 19px;
+    background-color: #e8e8e8;
+    color: #444444;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+}
+
+.label,
+.share,
+.like,
+.like02 {
+    width: 80px;
+    margin-left: 300px;
+    height: 20px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    background-color: #1b95e0;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    font: normal normal normal 11px/18px 'Helvetica Neue', Arial, sans-serif;
+    text-align: left;
+    border: none;
+}
+
+.like02 {
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+}
+
+.like02>span {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.like-text {
+    float: left;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.social-links {
+    float: left;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+.social-links>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.share {
+    width: 70px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.like {
+    width: 80px;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.label>span {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/* headr and foooter */
+
+header {
+    height: 82px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headicon {
+    height: 100%;
+}
+
+.headicon>img {
+    height: 80%;
+}
+
+#linkicon {
+    margin-left: 130px;
+}
+
+#fbbtn {
+    color: white;
+    font-weight: bold;
+    background-color: #5e5ead;
+    padding: 4px 16px;
+}
+
+#fbbtn:hover {
+    background-color: #4d4d88;
+}
+
+#emailbtn {
+    color: white;
+    font-weight: bold;
+    background-color: #6f6a6a;
+    padding: 4px 26px;
+}
+
+#emailbtn:hover {
+    background-color: gray;
+}
+
+#fbbtn,
+#emailbtn,
+#signupbtn,
+#loginbtn {
+    border: none;
+    border-radius: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#loginbtn {
+    background-color: white;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #58bf86;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>a>li {
+    font-size: 17.5px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+nav>a {
+    text-decoration: none;
+}
+
+#digireward {
+    color: yellow;
+}
+
+#logodiv {
+    height: 100%;
+    margin-left: 6%;
+}
+
+#logodiv>img {
+    height: 100%;
+    width: auto;
+}
+
+#one {
+    margin-left: 57px;
+}
+
+.highlighted_nav {
+    background-color: #49886b;
+    height: 100%;
+    padding: 10px 30px;
+}
+
+#last {
+    margin-right: 70px;
+}
+
+
+/* footer starts from here */
+
+#footpara {
+    margin-top: 10px;
+    background-color: #2bb673;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+#footer>div {
+    width: 17%;
+}
+
+#footer>div>a,
+#footer>div>p {
+    color: white;
+    text-decoration: none;
+}
+
+#footer>div>p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#footer>div>a>li {
+    list-style-type: none;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+#footpara>p {
+    color: white;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 12px;
+    font-weight: bold;
+}

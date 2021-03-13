@@ -1,47 +1,58 @@
 :root {
     --primary: white;
-    --secondary:#f0f0f0;
+    --secondary: #f0f0f0;
     --primary-text: #444444;
-    --secondary-text:#888888;
+    --secondary-text: #888888;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-#main-container{
+
+#main-container {
     background: var(--secondary);
     width: 100%;
     height: 200px;
     align-items: center;
 }
+
 #headlines {
     margin-left: 150px;
 }
-#h1s,#h2s,#h3s{
+
+#h1s,
+#h2s,
+#h3s {
     float: left;
     margin-top: 20px;
     font-size: 26px;
 }
-#h1s{
+
+#h1s {
     color: var(--primary-text);
     font-weight: 100;
     font-style: arial;
 }
-#h2s{
+
+#h2s {
     width: 2px;
     height: 20px;
     background: var(--secondary-text);
     margin-top: 25px;
     margin-left: 30px;
 }
-#h3s{
+
+#h3s {
     margin-left: 30px;
     color: var(--secondary-text);
 }
-#social-link{
+
+#social-link {
     float: right;
     margin-right: 180px;
 }
+
 button {
     background: royalblue;
     border: 0;
@@ -50,17 +61,21 @@ button {
     border-radius: 2px;
     margin-top: 25px;
 }
-#btn1{
+
+#btn1 {
     margin-right: 70px;
 }
-#para1{
+
+#para1 {
     margin-left: 150px;
     margin-top: 20px;
 }
+
 #search-box {
     margin-left: 150px;
 }
-#categories{
+
+#categories {
     width: 150px;
     height: 40px;
     border: 1px solid gainsboro;
@@ -73,6 +88,7 @@ button {
     padding: 3px 10px 3px 10px;
     outline: none;
 }
+
 #search {
     width: 350px;
     height: 40px;
@@ -86,7 +102,9 @@ button {
     color: #666666;
     padding: 3px 10px 3px 10px;
 }
-#btn3,#btn4 {
+
+#btn3,
+#btn4 {
     width: 170px;
     height: 40px;
     margin-left: 30px;
@@ -97,10 +115,12 @@ button {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 17px;
 }
+
 #btn4 {
     margin-left: 120px;
     background: green;
 }
+
 #cone {
     display: block;
     width: 0;
@@ -117,10 +137,9 @@ button {
     margin: auto;
     margin-top: 30px;
     display: grid;
-    grid-template: "btns1 btns2 btns3 btns4 btns5 btns6"
-    "btns7 btns8 btns9 btns10 btns11 btns12";
-    
+    grid-template: "btns1 btns2 btns3 btns4 btns5 btns6" "btns7 btns8 btns9 btns10 btns11 btns12";
 }
+
 #dishes>button {
     background: #f5f4f4;
     width: 140px;
@@ -130,47 +149,51 @@ button {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 14px;
     border-radius: 5px;
-
-    
 }
+
 #buttons {
     margin-left: 190px;
 }
-#buttons>button, #buttons1>button {
+
+#buttons>button,
+#buttons1>button {
     width: 30px;
     height: 30px;
     background: none;
     color: rgb(94, 113, 221);
     margin-right: 10px;
 }
+
 #recepies-cat {
     width: 75%;
     height: 700px;
     margin: auto;
     display: grid;
-    grid-template: "all-cat-rec1 all-cat-rec2 all-cat-rec3"
-    "all-cat-rec4 all-cat-rec5 all-cat-rec6";
+    grid-template: "all-cat-rec1 all-cat-rec2 all-cat-rec3" "all-cat-rec4 all-cat-rec5 all-cat-rec6";
     gap: 30px;
     margin-top: 50px;
-    
 }
-#recepies-cat>div{
+
+#recepies-cat>div {
     border: 1px solid #dddddd;
 }
-#dish-logo,#dish-time{
+
+#dish-logo,
+#dish-time {
     width: 100%;
     height: 75px;
     background-color: white;
 }
+
 #dish-time {
     height: 50px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
 }
+
 #img-text {
     width: 100%;
-    height:215px ;
-    background-image: url(7001.png);
+    height: 215px;
     background-size: cover;
     background-position: center;
     color: rgb(219, 201, 215);
@@ -179,39 +202,55 @@ button {
     display: flex;
     text-rendering: auto;
 }
+
 #time {
     width: 150px;
     float: left;
 }
-#time>div:nth-child(1)> img,#like>img,#comment>img {
-    width: 30px;
-    height: 30px;
+
+#time>div:nth-child(1)>img,
+#like>img,
+#comment>img {
+    width: 20px;
+    height: 20px;
     margin-top: 15px;
     margin-left: 20px;
 }
-#time>div:nth-child(1),#time>div:nth-child(2){
+
+#comment>img {
+    margin-left: 40px;
+}
+
+#time>div:nth-child(1),
+#time>div:nth-child(2) {
     float: left;
 }
+
 #time>div:nth-child(2) {
     margin-left: 10px;
     padding-top: 18px;
-    font-size: 20px;
+    font-size: 15px;
 }
-#like,#comment {
-    width: 90px ;
+
+#like,
+#comment {
+    width: 90px;
     height: 50px;
     float: left;
 }
+
 #restro-logo>img {
     width: 60px;
     height: 50px;
     border-radius: 50px;
     margin: 12px;
 }
-#restro-logo{
+
+#restro-logo {
     float: left;
 }
-#dish-name{
+
+#dish-name {
     float: left;
     text-align: center;
     padding-top: 25px;
@@ -219,17 +258,30 @@ button {
     margin-right: 30px;
     font-size: 20px;
 }
-#btn-view>button{
+
+#dish-name>a {
+    color: #666666;
+    font-weight: normal;
+}
+
+#btn-view {
+    margin-right: 10px;
+}
+
+#btn-view>button {
     background: tomato;
     font-size: 20px;
-    width: 80px;
+    width: 70px;
     height: 30px;
     border-radius: 7px;
     color: white;
+    float: right;
 }
+
 #link-restro {
     text-decoration: none;
 }
+
 #advertise {
     width: 79%;
     height: 300px;
@@ -237,25 +289,179 @@ button {
     margin-top: 100px;
     border: 2px solid gray;
 }
-#advertise>img{
+
+#advertise>img {
     width: 100%;
     height: 300px;
-    
 }
+
 #buttons1 {
     margin-top: 30px;
     margin-left: 180px;
 }
-#strip{
+
+#strip {
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
     height: 30px;
     background: rgb(15, 15, 15);
-    opacity: 0.6
-    
+    opacity: 0.8;
+    color: white;
+    padding-top: 8px;
 }
 
 
+/* header and footer */
 
+header {
+    height: 82px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headicon {
+    height: 100%;
+}
+
+.headicon>img {
+    height: 80%;
+}
+
+#linkicon {
+    margin-left: 130px;
+}
+
+#fbbtn {
+    color: white;
+    font-weight: bold;
+    background-color: #5e5ead;
+    padding: 4px 16px;
+}
+
+#fbbtn:hover {
+    background-color: #4d4d88;
+}
+
+#emailbtn {
+    color: white;
+    font-weight: bold;
+    background-color: #6f6a6a;
+    padding: 4px 26px;
+}
+
+#emailbtn:hover {
+    background-color: gray;
+}
+
+#fbbtn,
+#emailbtn,
+#signupbtn,
+#loginbtn {
+    border: none;
+    border-radius: 7px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#loginbtn {
+    background-color: white;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #58bf86;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>a>li {
+    font-size: 17.5px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+nav>a {
+    text-decoration: none;
+}
+
+#digireward {
+    color: yellow;
+}
+
+#logodiv {
+    height: 100%;
+    margin-left: 6%;
+}
+
+#logodiv>img {
+    height: 100%;
+    width: auto;
+}
+
+#one {
+    margin-left: 57px;
+}
+
+.highlighted_nav {
+    background-color: #49886b;
+    height: 100%;
+    padding: 10px 30px;
+}
+
+#last {
+    margin-right: 70px;
+}
+
+
+/* footer starts from here */
+
+#footpara {
+    margin-top: 10px;
+    background-color: #2bb673;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+#footer>div {
+    width: 17%;
+}
+
+#footer>div>a,
+#footer>div>p {
+    color: white;
+    text-decoration: none;
+}
+
+#footer>div>p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#footer>div>a>li {
+    list-style-type: none;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+#footpara>p {
+    color: white;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 12px;
+    font-weight: bold;
+}
