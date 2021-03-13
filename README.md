@@ -12,7 +12,7 @@ Kindmeal.my is a website that has a lot of information on everything that is rel
 * Meals Page & details page - Vinayak Pk
 * Recipe Page & detials pages - Uday Kumar
 ### Functionalities :
-* Restuarants search,
+* Restuarants search by restuarant name,location or type of food,
 * Pagination ,
 * dynamic posts rendered using javascript.
 * Use of URLSearchParagms for getting the data and showing in details page of meals_deals
