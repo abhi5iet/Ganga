@@ -23,3 +23,7 @@ Kindmeal.my is a website that has a lot of information on everything that is rel
 * Popup Signup and sign in page
 
 We have made it dynamic and have added functionalities using javascript ,css ,and html .We have created the repository and added seperate branches to work on each part of the pages, We have tried to clone pages as much as possible within the limited time frame.
+
+
+# WEBSITE IS HOSTED FROM VERCEL:
+* LINK (https://kindmeal-clone.vercel.app/)
