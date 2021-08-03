@@ -37,5 +37,5 @@ We have made it dynamic and have added functionalities using javascript ,css ,an
 * Javascript
 
 
-## WEBSITE IS HOSTED FROM VERCEL:
-* LINK (https://kindmeal-clone.vercel.app/)
+## Website is hosted from VERCEL:
+* Link:- https://kindmeal-clone.vercel.app/
