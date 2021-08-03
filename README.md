@@ -10,7 +10,7 @@ Kindmeal.my is a website that has a lot of information on everything that is rel
 
 <a href="#"><img width="100%" height="auto" src="https://i.ibb.co/K2kTjyr/Screenshot-969.png" height="175px"/></a>
 
-<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/DGLQLJf/Screenshot-970.png"" height="175px"/></a>
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/DGLQLJf/Screenshot-970.png" height="175px"/></a>
 
 ## Project
 **We tried to implement a few of these pages**
